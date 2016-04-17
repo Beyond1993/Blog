@@ -1057,8 +1057,7 @@ CREATE TABLE `ot_ucenter_member` (
 -- ----------------------------
 -- Records of ot_ucenter_member
 -- ----------------------------
-INSERT INTO `ot_ucenter_member` VALUES ('1', 'admin', 'd10960adc7c545c9af86cdb75c319c70', 'xiaowenzinihaoya@163.com', '', '1450608302', '2130706433', '1454228328', '2130706433', '1450608302', '1');
-
+INSERT INTO `ot_ucenter_member` VALUES ('1', 'admin', 'd09334e6bf97f456601117ca84570932', 'xiaowenzinihaoya@163.com', '', '1450608302', '2130706433', '1454228328', '2130706433', '1450608302', '1');
 -- ----------------------------
 -- Table structure for `ot_ucenter_setting`
 -- ----------------------------
