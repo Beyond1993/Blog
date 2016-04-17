@@ -21,16 +21,22 @@ class PublicController extends \Think\Controller {
      * @author 麦当苗儿 <zuojiazi@vip.qq.com>
      */
     public function login($username = null, $password = null, $verify = null){
+//	echo "string";
         if(IS_POST){
             /* 检测验证码 TODO: */
-            if(!check_verify($verify)){
-                $this->error('验证码输入错误！');
-            }
-
+//	    echo "verify" ;
+//	    echo $verify;
+            //if(!check_verify($verify)){
+	//	$this->error($verify);
+//                $this->error('验证码输入错误lalala！');
+          //  }
+//	    dump($_POST);
             /* 调用UC登录接口登录 */
             $User = new UserApi;
-            $uid = $User->login($username, $password);
-            if(0 < $uid){ //UC登录成功
+	  //  echo think_ucenter_md5("admin", UC_AUTH_KEY);
+            $uid = $User->login($username, $password);    
+//	    dump($uid);
+	if(0 < $uid){ //UC登录成功
                 /* 登录用户 */
                 $Member = D('Member');
                 if($Member->login($uid)){ //登录用户

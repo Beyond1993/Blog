@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>欢迎您登录OneThink</title>
-        <link rel="stylesheet" type="text/css" href="/blog/Public/Admin/css/login.css" media="all">
-       	<link rel="stylesheet" type="text/css" href="/blog/Public/Admin/css/<?php echo (C("COLOR_STYLE")); ?>.css" media="all">
+        <link rel="stylesheet" type="text/css" href="/Public/Admin/css/login.css" media="all">
+       	<link rel="stylesheet" type="text/css" href="/Public/Admin/css/<?php echo (C("COLOR_STYLE")); ?>.css" media="all">
     </head>
     <body id="login-page">
         <div id="main-content">
@@ -12,7 +12,7 @@
             <!-- 主体 -->
             <div class="login-body">
                 <div class="login-main pr">
-                    <form action="<?php echo U('login');?>" method="post" class="login-form">
+                    <form action="<?php echo U('login');?>" method="post"  class="login-form">
                         <h3 class="welcome"><i class="login-logo"></i>OneThink管理平台</h3>
                         <div id="itemBox" class="item-box">
                             <div class="item">
@@ -47,14 +47,14 @@
             </div>
         </div>
 	<!--[if lt IE 9]>
-    <script type="text/javascript" src="/blog/Public/static/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/Public/static/jquery-1.10.2.min.js"></script>
     <![endif]-->
     <!--[if gte IE 9]><!-->
-    <script type="text/javascript" src="/blog/Public/static/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="/Public/static/jquery-2.0.3.min.js"></script>
     <!--<![endif]-->
     <script type="text/javascript">
     	/* 登陆表单获取焦点变色 */
-    	$(".login-form").on("focus", "input", function(){
+/*    	$(".login-form").on("focus", "input", function(){
             $(this).closest('.item').addClass('focus');
         }).on("blur","input",function(){
             $(this).closest('.item').removeClass('focus');
@@ -124,7 +124,7 @@
                 
                 
             }
-		});
+		});*/
     </script>
 </body>
 </html>
