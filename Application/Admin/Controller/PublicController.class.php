@@ -26,14 +26,14 @@ class PublicController extends \Think\Controller {
             /* 检测验证码 TODO: */
 //	    echo "verify" ;
 //	    echo $verify;
-            //if(!check_verify($verify)){
+            if(!check_verify($verify)){
 	//	$this->error($verify);
-//                $this->error('验证码输入错误lalala！');
-          //  }
+              $this->error('验证码输入错误lalala！');
+            }
 //	    dump($_POST);
             /* 调用UC登录接口登录 */
             $User = new UserApi;
-	  //  echo think_ucenter_md5("admin", UC_AUTH_KEY);
+//	    echo think_ucenter_md5("wodeboke@123", UC_AUTH_KEY);
             $uid = $User->login($username, $password);    
 //	    dump($uid);
 	if(0 < $uid){ //UC登录成功

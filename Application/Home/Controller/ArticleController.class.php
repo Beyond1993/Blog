@@ -277,9 +277,10 @@ class ArticleController extends HomeController {
 		if(empty($id)){
 			$this->error('没有指定文档分类！');
 		}
-
+//		dump($id);
 		/* 获取分类信息 */
 		$category = D('Category')->info($id);
+//		dump($category);
 		if($category && 1 == $category['status']){
 			switch ($category['display']) {
 				case 0:

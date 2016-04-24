@@ -38,67 +38,81 @@
     <div class="container padding-top padding-bottom">
 
         <div class="line">
-            <div class="xl12 xs3 xm3 xb2">
+           <!-- <div class="xl12 xs3 xm3 xb2">
                 <button class="button icon-navicon float-right" data-target="#header-demo"></button>
-                <a href="http://www.phpbst.com"><img src="/Public/static/bootstrap/img/logo.png" class="ring-hover" alt="前端CCS框架" /></a>
+                <a href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/logo.png" class="ring-hover" alt="前端CCS框架" /></a>
             </div>
-            <div class=" xl12 xs9 xm9 xb10 nav-navicon" id="header-demo">
+	  -->
+           <!-- <div class=" xl12 xs9 xm9 xb10 nav-navicon" id="header-demo"> -->
+            <div class=" nav-navicon" id="header-demo">
 
                 <div class="xs8 xm6 xb7 padding-small">
                     <ul class="nav nav-menu nav-inline nav-big">
-                        <li><a href="http://www.phpbst.com">首页</a></li>
-                        <li><a href="/index.php?s=/home/article/lists/category/php.html">php</a></li>
+                        <li><a href="http://www.beyondfw.com">首页</a></li>
+                        <li>
+                            <a href="/index.php?s=/home/article/lists/category/system.html">系统<span class="arrow"></span></a>
+                            <ul class="drop-menu">
+                                <li><a href="/index.php?s=/home/article/lists/category/redis.html">Java</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/memcached.html">php</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/mongodb.html">javascript</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/mysql.html">html+css</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/linux.html">Linux</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/apache.html">Apache</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/nginx.html">Nginx</a>
+                                <li><a href="/index.php?s=/home/article/lists/category/redis.html">Redis</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/memcached.html">Memcached</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/mongodb.html">Mongodb</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/mysql.html">Mysql</a></li>
+                                </li>
+                            </ul>
+                        </li>
                         <!--<li class="active">-->
                         <li>
-                            <a href="/index.php?s=/home/article/lists/category/storage.html">存储<span class="arrow"></span></a>
+                            <a href="/index.php?s=/home/article/lists/category/algorithmBigData.html">算法大数据<span class="arrow"></span></a>
                             <ul class="drop-menu">
-                                <li><a href="/index.php?s=/home/article/lists/category/redis.html">Redis</a></li>
-                                <li>
-                                    <a href="/index.php?s=/home/article/lists/category/memcached.html">Memcached<!--<span class="arrow"></span>--></a>
-                                    <!--<ul>
-                                        <li><a href="http://www.phpbst.com">响应式布局</a></li>
-                                        <li><a href="http://www.phpbst.com">非响应式布局</a></li>
-                                    </ul>-->
-                                </li>
+                                <li><a href="/index.php?s=/home/article/lists/category/hadoop.html">Hadoop</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/ML.html">Machine Learning</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/RL.html">RL Learing</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="/index.php?s=/home/article/lists/category/db.html">数据库<span class="arrow"></span></a>
+                            <a href="/index.php?s=/home/article/lists/category/db.html">cmu课程<span class="arrow"></span></a>
                             <ul class="drop-menu">
-                                <li><a href="/index.php?s=/home/article/lists/category/mongodb.html">Mongodb</a></li>
-                                <li>
-                                    <a href="/index.php?s=/home/article/lists/category/mysql.html">Mysql</a>
-                                </li>
+                                <li><a href="/index.php?s=/home/article/lists/category/linux.html">Speech Recognization</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/apache.html">Computer Vision</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/nginx.html">How to Write Fast Code</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="/index.php?s=/home/article/lists/category/cooperate.html">运维<span class="arrow"></span></a>
+                            <a href="/index.php?s=/home/article/lists/category/front.html">编程项目<span class="arrow"></span></a>
                             <ul class="drop-menu">
-                                <li><a href="/index.php?s=/home/article/lists/category/linux.html">Linux</a></li>
-                                <li>
-                                    <a href="/index.php?s=/home/article/lists/category/apache.html">Apache</a>
-                                </li>
-                                <li>
-                                    <a href="/index.php?s=/home/article/lists/category/nginx.html">Nginx</a>
-                                </li>
+                                <li><a href="/index.php?s=/home/article/lists/category/nodejs.html">C/C++</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/ionic.html">Java</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Python</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Matlab</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">PHP</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Javascript</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">HTML/CSS</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Shell</a></li>
                             </ul>
                         </li>
+
                         <li>
-                            <a href="/index.php?s=/home/article/lists/category/front.html">前端<span class="arrow"></span></a>
+                            <a href="/index.php?s=/home/article/lists/category/front.html">休闲<span class="arrow"></span></a>
                             <ul class="drop-menu">
-                                <li><a href="/index.php?s=/home/article/lists/category/nodejs.html">Nodejs</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/nodejs.html">唐诗宋词元曲</a></li>
                                 <li>
-                                    <a href="/index.php?s=/home/article/lists/category/ionic.html">Ionic</a>
+                                    <a href="/index.php?s=/home/article/lists/category/ionic.html">历史</a>
                                 </li>
                                 <li>
-                                    <a href="/index.php?s=/home/article/lists/category/argularjs.html">Argularjs</a>
+                                    <a href="/index.php?s=/home/article/lists/category/argularjs.html">京剧</a>
                                 </li>
                             </ul>
                         </li>
 
                     </ul>
                 </div>
-                <div class="xs4 xm3 xb4">
+                <div class="xs4 xm3 xb4" style="float:right">
                     <form class="search">
                         <div class="input-group padding-little-top">
                             <input id="word" type="text" class="input border-main" name="keywords" size="30" placeholder="关键词" />
@@ -117,16 +131,17 @@
     </div>
 
 </div>
+
     <div class="container">
         <!--div class="line-small">
             <div class="xl12 xm6 margin-small-bottom">
-                <a href="http://www.phpbst.com"><img src="/Public/static/bootstrap/img/product1.jpg" width="100%" /></a>
+                <a href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/product1.jpg" width="100%" /></a>
             </div>
             <div class="xl6 xm3">
-                <a href="http://www.phpbst.com"><img src="/Public/static/bootstrap/img/product2.jpg" width="100%" /></a>
+                <a href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/product2.jpg" width="100%" /></a>
             </div>
             <div class="xl6 xm3">
-                <a href="http://www.phpbst.com"><img src="/Public/static/bootstrap/img/product3.jpg" width="100%" /></a>
+                <a href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/product3.jpg" width="100%" /></a>
             </div>
         </div>-->
         <br />
@@ -136,15 +151,15 @@
         <div class="span7" style="margin-left: 50px;">
             <?php if(is_array($lists)): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div style="margin-bottom:40px;background-color: #ffffff;box-shadow: 0 0 10px 7px rgba(218, 218, 218, 0.5);">
                     <p style="margin-bottom: -3px;">
+                    <p class="write hidden-sm">
+                        <a><span class="glyphicon glyphicon-time"></span></a> &nbsp;<?php echo ($data["create_time"]); ?>&nbsp;&nbsp;作者：Wayne&nbsp;&nbsp;分类：[&nbsp;<a href="<?php echo ($data["icon_url"]); ?>"><?php echo ($data["icon_alt"]); ?></a>&nbsp;]<span class="hidden-xs">&nbsp;&nbsp;点击：[&nbsp;<?php echo ($data["view"]); ?>&nbsp;]</span>
+                    </p>
                         <a href="/index.php?s=/home/article/detail/id/<?php echo ($data["id"]); ?>.html"><span class="badge bg-main"><?php echo ($data["title"]); ?></span></a>
 
-                    <div class="title_r hidden-xs"><img src="/Public/Home/images/tuijian.gif" style="width:70px"></div>
+<!--                    <div class="title_r hidden-xs"><img src="/Public/Home/images/tuijian.gif" style="width:70px"></div> -->
                     </p>
                     <p>
                         <?php echo ($data["description"]); ?>
-                    </p>
-                    <p class="write hidden-sm">
-                        <a><span class="glyphicon glyphicon-time"></span></a> &nbsp;<?php echo ($data["create_time"]); ?>&nbsp;&nbsp;作者：Mr Gao&nbsp;&nbsp;分类：[&nbsp;<a href="<?php echo ($data["icon_url"]); ?>"><?php echo ($data["icon_alt"]); ?></a>&nbsp;]<span class="hidden-xs">&nbsp;&nbsp;点击：[&nbsp;<?php echo ($data["view"]); ?>&nbsp;]</span>
                     </p>
                 </div><?php endforeach; endif; else: echo "" ;endif; ?>
 
@@ -159,21 +174,21 @@
         <div class="xs6">
             <img src="/Public/static/bootstrap/img/1.jpg" width="100%" />
             <ul class="list-unstyle height-big padding-top">
-                <li><span class="badge bg-red">新闻</span> <a href="http://www.phpbst.com">特大喜讯，我们发布正式版了。</a></li>
-                <li><span class="badge bg-main">新闻</span> <a href="http://www.phpbst.com">是一款专业网页前端UI解决方案</a></li>
-                <li><span class="badge bg-main">新闻</span> <a href="http://www.phpbst.com">方便个性化、人性化的前端设计方法</a></li>
-                <li><span class="badge bg-main">新闻</span> <a href="http://www.phpbst.com">任何初学者都可快速建立美观的页面</a></li>
-                <li><span class="badge bg-main">新闻</span> <a href="http://www.phpbst.com">是一款专业网页前端UI解决方案</a></li>
+                <li><span class="badge bg-red">新闻</span> <a href="http://www.beyondfw.com">特大喜讯，我们发布正式版了。</a></li>
+                <li><span class="badge bg-main">新闻</span> <a href="http://www.beyondfw.com">是一款专业网页前端UI解决方案</a></li>
+                <li><span class="badge bg-main">新闻</span> <a href="http://www.beyondfw.com">方便个性化、人性化的前端设计方法</a></li>
+                <li><span class="badge bg-main">新闻</span> <a href="http://www.beyondfw.com">任何初学者都可快速建立美观的页面</a></li>
+                <li><span class="badge bg-main">新闻</span> <a href="http://www.beyondfw.com">是一款专业网页前端UI解决方案</a></li>
             </ul>
         </div>
         <div class="xs6">
             <img src="/Public/static/bootstrap/img/2.jpg" width="100%" />
             <ul class="list-unstyle height-big padding-top">
-                <li><span class="badge bg-yellow">新闻</span> <a href="http://www.phpbst.com">特大喜讯，我们发布正式版了。</a></li>
-                <li><span class="badge bg-sub">新闻</span> <a href="http://www.phpbst.com">是一款专业网页前端UI解决方案</a></li>
-                <li><span class="badge bg-sub">新闻</span> <a href="http://www.phpbst.com">方便个性化、人性化的前端设计方法</a></li>
-                <li><span class="badge bg-main">新闻</span> <a href="http://www.phpbst.com">是一款专业网页前端UI解决方案</a></li>
-                <li><span class="badge bg-sub">新闻</span> <a href="http://www.phpbst.com">任何初学者都可快速建立美观的页面</a></li>
+                <li><span class="badge bg-yellow">新闻</span> <a href="http://www.beyondfw.com">特大喜讯，我们发布正式版了。</a></li>
+                <li><span class="badge bg-sub">新闻</span> <a href="http://www.beyondfw.com">是一款专业网页前端UI解决方案</a></li>
+                <li><span class="badge bg-sub">新闻</span> <a href="http://www.beyondfw.com">方便个性化、人性化的前端设计方法</a></li>
+                <li><span class="badge bg-main">新闻</span> <a href="http://www.beyondfw.com">是一款专业网页前端UI解决方案</a></li>
+                <li><span class="badge bg-sub">新闻</span> <a href="http://www.beyondfw.com">任何初学者都可快速建立美观的页面</a></li>
             </ul>
         </div>
     </div>-->
@@ -183,6 +198,7 @@
     <br />
     <br />
 </div>
+
             <div class="xl12 xm4">
     <h4>
         <span>
@@ -245,38 +261,38 @@
             <ul class="list-media list-underline">
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/Public/static/bootstrap/img/e1.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>网格系统</strong>拼图网络系统采用12列显示，可配置间隔的大小，灵活方便。 <a class="button button-little border-red swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e1.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>网格系统</strong>拼图网络系统采用12列显示，可配置间隔的大小，灵活方便。 <a class="button button-little border-red swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/Public/static/bootstrap/img/e2.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>自由灵活</strong>拼图由多年前端经验的设计编程人员开发，在保持代码精简的同时，也让框架更灵活、自由。 <a class="button button-little border-yellow swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e2.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>自由灵活</strong>拼图由多年前端经验的设计编程人员开发，在保持代码精简的同时，也让框架更灵活、自由。 <a class="button button-little border-yellow swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/Public/static/bootstrap/img/e3.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>方便的自定义配色</strong>拼图可根据项目需要，根据项目自由配色，可使界面丰富多彩。 <a class="button button-little border-red swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e3.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>方便的自定义配色</strong>拼图可根据项目需要，根据项目自由配色，可使界面丰富多彩。 <a class="button button-little border-red swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/Public/static/bootstrap/img/e4.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>自动适配设备</strong>拼图响应式设计，可自动适应手机、平板、电脑等设备，一站解决所有屏幕需求。 <a class="button button-little border-black swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e4.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>自动适配设备</strong>拼图响应式设计，可自动适应手机、平板、电脑等设备，一站解决所有屏幕需求。 <a class="button button-little border-black swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/Public/static/bootstrap/img/e5.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>网格系统</strong>拼图网络系统采用12列显示，可配置间隔的大小，灵活方便。 <a class="button button-little border-blue swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e5.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>网格系统</strong>拼图网络系统采用12列显示，可配置间隔的大小，灵活方便。 <a class="button button-little border-blue swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/Public/static/bootstrap/img/e6.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>方便的自定义配色</strong>拼图可根据项目需要，根据项目自由配色，可使界面丰富多彩。 <a class="button button-little border-green swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e6.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>方便的自定义配色</strong>拼图可根据项目需要，根据项目自由配色，可使界面丰富多彩。 <a class="button button-little border-green swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
             </ul>
@@ -363,11 +379,11 @@
                 <a href="http://www.pintuer.com" target="_blank"><img class="logo" src="/Public/static/bootstrap/img/24-white.png" alt="拼图前端CSS框架" /></a>
             </div>-->
             <div class="navbar-body nav-navicon" id="navbar-footer">
-                <div class="navbar-text navbar-left hidden-s hidden-l">版权所有 &copy; <a href="http://www.phpbst.com" target="_blank">phpbst.com</a> All Rights Reserved，粤ICP备15012573号-1
+                <div class="navbar-text navbar-left hidden-s hidden-l">版权所有 &copy; <a href="http://www.beyondfw.com" target="_blank">phpbst.com</a> All Rights Reserved，粤ICP备15012573号-1
                     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256689355'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256689355%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
                 </div>
                 <ul class="nav nav-inline navbar-right">
-                    <li><a href="http://www.phpbst.com">一块儿编程，一块儿嗨！</a></li>
+                    <li><a href="http://www.beyondfw.com">一块儿编程，一块儿嗨！</a></li>
                     <!--<li><a href="http://www.pintuer.com">CSS</a></li>
                     <li><a href="http://www.pintuer.com">元件</a></li>
                     <li><a href="http://www.pintuer.com">更多</a></li>-->

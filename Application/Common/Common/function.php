@@ -397,9 +397,11 @@ function get_username($uid = 0){
     $key = "u{$uid}";
     if(isset($list[$key])){ //已缓存，直接使用
         $name = $list[$key];
+//	dump($name);
     } else { //调用接口获取用户信息
         $User = new User\Api\UserApi();
         $info = $User->info($uid);
+	dump($info);
         if($info && isset($info[1])){
             $name = $list[$key] = $info[1];
             /* 缓存用户 */

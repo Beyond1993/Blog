@@ -3,12 +3,12 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <link rel="stylesheet" href="/blog/Public/static/pintu/css/pintuer.css">
-    <link rel="stylesheet" href="/blog/Public/Home/css/my.css">
-    <script type="text/javascript" src="/blog/Public/static/jquery-2.0.0.min.js"></script>
-    <script src="/blog/Public/static/pintu/js/pintuer.js"></script>
-    <script src="/blog/Public/static/pintu/js/respond.js"></script>
-    <script src="/blog/Public/Home/js/search.js"></script>
+    <link rel="stylesheet" href="/Public/static/pintu/css/pintuer.css">
+    <link rel="stylesheet" href="/Public/Home/css/my.css">
+    <script type="text/javascript" src="/Public/static/jquery-2.0.0.min.js"></script>
+    <script src="/Public/static/pintu/js/pintuer.js"></script>
+    <script src="/Public/static/pintu/js/respond.js"></script>
+    <script src="/Public/Home/js/search.js"></script>
 
     <link type="image/x-icon" href="http://www.pintuer.com/favicon.ico" rel="shortcut icon" />
     <style>
@@ -22,11 +22,11 @@
             box-shadow: 0 3px 6px rgba(0, 0, 0, .175);
         }
     </style>
-    <!--<script type="text/javascript" src="/blog/Public/static/jquery-ui.js"></script>
-    <link href="/blog/Public/static/bootstrap/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
-    <script type="text/javascript" src="/blog/Public/static/bootstrap/js/bootstrapd.min.js"></script>
-    <script type="text/javascript" src="/blog/Public/static/location.js"></script>
-    <link rel="stylesheet" href="/blog/Public/Home/css/bst.css"/>-->
+    <!--<script type="text/javascript" src="/Public/static/jquery-ui.js"></script>
+    <link href="/Public/static/bootstrap/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="/Public/static/bootstrap/js/bootstrapd.min.js"></script>
+    <script type="text/javascript" src="/Public/static/location.js"></script>
+    <link rel="stylesheet" href="/Public/Home/css/bst.css"/>-->
 
     <title><?php echo ($detail_title); ?></title>
     <meta name="Keywords" content="<?php echo ($detail_keywords); ?>"/>
@@ -38,67 +38,77 @@
     <div class="container padding-top padding-bottom">
 
         <div class="line">
-            <div class="xl12 xs3 xm3 xb2">
+           <!-- <div class="xl12 xs3 xm3 xb2">
                 <button class="button icon-navicon float-right" data-target="#header-demo"></button>
-                <a href="http://www.phpbst.com"><img src="/blog/Public/static/bootstrap/img/logo.png" class="ring-hover" alt="前端CCS框架" /></a>
+                <a href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/logo.png" class="ring-hover" alt="前端CCS框架" /></a>
             </div>
-            <div class=" xl12 xs9 xm9 xb10 nav-navicon" id="header-demo">
+	  -->
+           <!-- <div class=" xl12 xs9 xm9 xb10 nav-navicon" id="header-demo"> -->
+            <div class=" nav-navicon" id="header-demo">
 
                 <div class="xs8 xm6 xb7 padding-small">
                     <ul class="nav nav-menu nav-inline nav-big">
-                        <li><a href="http://www.phpbst.com">首页</a></li>
-                        <li><a href="/index.php?s=/home/article/lists/category/php.html">php</a></li>
-                        <!--<li class="active">-->
+                        <li><a href="http://www.beyondfw.com">首页</a></li>
                         <li>
-                            <a href="/index.php?s=/home/article/lists/category/storage.html">存储<span class="arrow"></span></a>
-                            <ul class="drop-menu">
-                                <li><a href="/index.php?s=/home/article/lists/category/redis.html">Redis</a></li>
-                                <li>
-                                    <a href="/index.php?s=/home/article/lists/category/memcached.html">Memcached<!--<span class="arrow"></span>--></a>
-                                    <!--<ul>
-                                        <li><a href="http://www.phpbst.com">响应式布局</a></li>
-                                        <li><a href="http://www.phpbst.com">非响应式布局</a></li>
-                                    </ul>-->
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/index.php?s=/home/article/lists/category/db.html">数据库<span class="arrow"></span></a>
-                            <ul class="drop-menu">
-                                <li><a href="/index.php?s=/home/article/lists/category/mongodb.html">Mongodb</a></li>
-                                <li>
-                                    <a href="/index.php?s=/home/article/lists/category/mysql.html">Mysql</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/index.php?s=/home/article/lists/category/cooperate.html">运维<span class="arrow"></span></a>
+                            <a href="/index.php?s=/home/article/lists/category/system.html">系统<span class="arrow"></span></a>
                             <ul class="drop-menu">
                                 <li><a href="/index.php?s=/home/article/lists/category/linux.html">Linux</a></li>
-                                <li>
-                                    <a href="/index.php?s=/home/article/lists/category/apache.html">Apache</a>
-                                </li>
-                                <li>
-                                    <a href="/index.php?s=/home/article/lists/category/nginx.html">Nginx</a>
+                                <li><a href="/index.php?s=/home/article/lists/category/apache.html">Apache</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/nginx.html">Nginx</a>
+                                <li><a href="/index.php?s=/home/article/lists/category/redis.html">Redis</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/memcached.html">Memcached</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/mongodb.html">Mongodb</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/mysql.html">Mysql</a></li>
                                 </li>
                             </ul>
                         </li>
+                        <!--<li class="active">-->
                         <li>
-                            <a href="/index.php?s=/home/article/lists/category/front.html">前端<span class="arrow"></span></a>
+                            <a href="/index.php?s=/home/article/lists/category/algorithmBigData.html">算法大数据<span class="arrow"></span></a>
                             <ul class="drop-menu">
-                                <li><a href="/index.php?s=/home/article/lists/category/nodejs.html">Nodejs</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/hadoop.html">Hadoop</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/ML.html">Machine Learning</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/RL.html">RL Learing</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/index.php?s=/home/article/lists/category/db.html">cmu课程<span class="arrow"></span></a>
+                            <ul class="drop-menu">
+                                <li><a href="/index.php?s=/home/article/lists/category/linux.html">Speech Recognization</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/apache.html">Computer Vision</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/nginx.html">How to Write Fast Code</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/index.php?s=/home/article/lists/category/front.html">编程项目<span class="arrow"></span></a>
+                            <ul class="drop-menu">
+                                <li><a href="/index.php?s=/home/article/lists/category/nodejs.html">C/C++</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/ionic.html">Java</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Python</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Matlab</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">PHP</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Javascript</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">HTML/CSS</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Shell</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="/index.php?s=/home/article/lists/category/front.html">休闲<span class="arrow"></span></a>
+                            <ul class="drop-menu">
+                                <li><a href="/index.php?s=/home/article/lists/category/nodejs.html">唐诗宋词元曲</a></li>
                                 <li>
-                                    <a href="/index.php?s=/home/article/lists/category/ionic.html">Ionic</a>
+                                    <a href="/index.php?s=/home/article/lists/category/ionic.html">历史</a>
                                 </li>
                                 <li>
-                                    <a href="/index.php?s=/home/article/lists/category/argularjs.html">Argularjs</a>
+                                    <a href="/index.php?s=/home/article/lists/category/argularjs.html">京剧</a>
                                 </li>
                             </ul>
                         </li>
 
                     </ul>
                 </div>
-                <div class="xs4 xm3 xb4">
+                <div class="xs4 xm3 xb4" style="float:right">
                     <form class="search">
                         <div class="input-group padding-little-top">
                             <input id="word" type="text" class="input border-main" name="keywords" size="30" placeholder="关键词" />
@@ -117,6 +127,7 @@
     </div>
 
 </div>
+
     <div class="container">
         <div class="xl12 xm8">
             
@@ -209,38 +220,38 @@
             <ul class="list-media list-underline">
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/blog/Public/static/bootstrap/img/e1.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>网格系统</strong>拼图网络系统采用12列显示，可配置间隔的大小，灵活方便。 <a class="button button-little border-red swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e1.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>网格系统</strong>拼图网络系统采用12列显示，可配置间隔的大小，灵活方便。 <a class="button button-little border-red swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/blog/Public/static/bootstrap/img/e2.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>自由灵活</strong>拼图由多年前端经验的设计编程人员开发，在保持代码精简的同时，也让框架更灵活、自由。 <a class="button button-little border-yellow swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e2.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>自由灵活</strong>拼图由多年前端经验的设计编程人员开发，在保持代码精简的同时，也让框架更灵活、自由。 <a class="button button-little border-yellow swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/blog/Public/static/bootstrap/img/e3.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>方便的自定义配色</strong>拼图可根据项目需要，根据项目自由配色，可使界面丰富多彩。 <a class="button button-little border-red swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e3.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>方便的自定义配色</strong>拼图可根据项目需要，根据项目自由配色，可使界面丰富多彩。 <a class="button button-little border-red swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/blog/Public/static/bootstrap/img/e4.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>自动适配设备</strong>拼图响应式设计，可自动适应手机、平板、电脑等设备，一站解决所有屏幕需求。 <a class="button button-little border-black swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e4.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>自动适配设备</strong>拼图响应式设计，可自动适应手机、平板、电脑等设备，一站解决所有屏幕需求。 <a class="button button-little border-black swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/blog/Public/static/bootstrap/img/e5.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>网格系统</strong>拼图网络系统采用12列显示，可配置间隔的大小，灵活方便。 <a class="button button-little border-blue swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e5.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>网格系统</strong>拼图网络系统采用12列显示，可配置间隔的大小，灵活方便。 <a class="button button-little border-blue swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="media media-x">
-                        <a class="float-left" href="http://www.phpbst.com"><img src="/blog/Public/static/bootstrap/img/e6.jpg" class="radius" alt="..."></a>
-                        <div class="media-body"><strong>方便的自定义配色</strong>拼图可根据项目需要，根据项目自由配色，可使界面丰富多彩。 <a class="button button-little border-green swing-hover" href="http://www.phpbst.com">查看详情</a></div>
+                        <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e6.jpg" class="radius" alt="..."></a>
+                        <div class="media-body"><strong>方便的自定义配色</strong>拼图可根据项目需要，根据项目自由配色，可使界面丰富多彩。 <a class="button button-little border-green swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
             </ul>
@@ -323,14 +334,14 @@
         <div class="navbar">
             <!--<div class="navbar-head">
                 <button class="button bg-gray icon-navicon" data-target="#navbar-footer"></button>
-                <a href="http://www.pintuer.com" target="_blank"><img class="logo" src="/blog/Public/static/bootstrap/img/24-white.png" alt="拼图前端CSS框架" /></a>
+                <a href="http://www.pintuer.com" target="_blank"><img class="logo" src="/Public/static/bootstrap/img/24-white.png" alt="拼图前端CSS框架" /></a>
             </div>-->
             <div class="navbar-body nav-navicon" id="navbar-footer">
-                <div class="navbar-text navbar-left hidden-s hidden-l">版权所有 &copy; <a href="http://www.phpbst.com" target="_blank">phpbst.com</a> All Rights Reserved，粤ICP备15012573号-1
+                <div class="navbar-text navbar-left hidden-s hidden-l">版权所有 &copy; <a href="http://www.beyondfw.com" target="_blank">phpbst.com</a> All Rights Reserved，粤ICP备15012573号-1
                     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256689355'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256689355%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
                 </div>
                 <ul class="nav nav-inline navbar-right">
-                    <li><a href="http://www.phpbst.com">一块儿编程，一块儿嗨！</a></li>
+                    <li><a href="http://www.beyondfw.com">一块儿编程，一块儿嗨！</a></li>
                     <!--<li><a href="http://www.pintuer.com">CSS</a></li>
                     <li><a href="http://www.pintuer.com">元件</a></li>
                     <li><a href="http://www.pintuer.com">更多</a></li>-->
