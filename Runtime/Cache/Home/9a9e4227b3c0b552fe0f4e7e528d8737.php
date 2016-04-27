@@ -52,10 +52,6 @@
                         <li>
                             <a href="/index.php?s=/home/article/lists/category/system.html">系统<span class="arrow"></span></a>
                             <ul class="drop-menu">
-                                <li><a href="/index.php?s=/home/article/lists/category/redis.html">Java</a></li>
-                                <li><a href="/index.php?s=/home/article/lists/category/memcached.html">php</a></li>
-                                <li><a href="/index.php?s=/home/article/lists/category/mongodb.html">javascript</a></li>
-                                <li><a href="/index.php?s=/home/article/lists/category/mysql.html">html+css</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/linux.html">Linux</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/apache.html">Apache</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/nginx.html">Nginx</a>
@@ -100,7 +96,7 @@
                         <li>
                             <a href="/index.php?s=/home/article/lists/category/front.html">休闲<span class="arrow"></span></a>
                             <ul class="drop-menu">
-                                <li><a href="/index.php?s=/home/article/lists/category/nodejs.html">唐诗宋词元曲</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/poem.html">唐诗宋词元曲</a></li>
                                 <li>
                                     <a href="/index.php?s=/home/article/lists/category/ionic.html">历史</a>
                                 </li>

@@ -107,7 +107,7 @@
                         <li>
                             <a href="/index.php?s=/home/article/lists/category/front.html">休闲<span class="arrow"></span></a>
                             <ul class="drop-menu">
-                                <li><a href="/index.php?s=/home/article/lists/category/nodejs.html">唐诗宋词元曲</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/poem.html">唐诗宋词元曲</a></li>
                                 <li>
                                     <a href="/index.php?s=/home/article/lists/category/ionic.html">历史</a>
                                 </li>
