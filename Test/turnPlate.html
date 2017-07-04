@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML5-Wuya-Network-TurnPlate</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/awardRotate.js"></script>
+
+<script type="text/javascript">
+var turnplate={
+		PrizesName:[],				//name of prizes
+		colors:[],				//different color of  different area
+		outsideRadius:192,			//out radius
+		textRadius:155,			//text Radius
+		insideRadius:68,			//inside radius
+		startAngle:0,				//start angle
+		bRotate:false				//false:stop; ture:rotate
+};
+
+$(document).ready(function(){
+	
+	turnplate.PrizesName = ["50M DATA", "10 $", "THANKS", "5 $", "10M DATA", "20M DATA", "20 $ ", "30M DATA", "100M DATA", "2 $"];
+	turnplate.colors = ["#FFF4D6", "#FFFFFF", "#FFF4D6", "#FFFFFF","#FFF4D6", "#FFFFFF", "#FFF4D6", "#FFFFFF","#FFF4D6", "#FFFFFF"];
+
+	
+	var rotateTimeOut = function (){
+		$('#wheelcanvas').rotate({
+			angle:0,
+			animateTo:2160,
+			duration:8000,
+			callback:function (){
+				alert('time out，please check you network! ');
+			}
+		});
+	};
+
+	//rotate turn plate item: index of iterm, txt：alert content
+	var rotateFn = function (item, txt){
+		var angles = item * (360 / turnplate.PrizesName.length) - (360 / (turnplate.PrizesName.length*2));
+		if(angles<270){
+			angles = 270 - angles; 
+		}else{
+			angles = 360 - angles + 270;
+		}
+		$('#wheelcanvas').stopRotate();
+		$('#wheelcanvas').rotate({
+			angle:0,
+			animateTo:angles+1800,
+			duration:8000,
+			callback:function (){
+				alert(txt);
+				turnplate.bRotate = !turnplate.bRotate;
+			}
+		});
+	};
+
+	$('.pointer').click(function (){
+		if(turnplate.bRotate)return;
+		turnplate.bRotate = !turnplate.bRotate;
+		var item = rnd(1,turnplate.PrizesName.length);
+		//if number is 10,the angle is [252, 216, 180, 144, 108, 72, 36, 360, 324, 288]
+		rotateFn(item, turnplate.PrizesName[item-1]);
+		console.log(item);
+	});
+});
+
+function rnd(n, m){
+	var random = Math.floor(Math.random()*(m-n+1)+n);
+	return random;
+	
+}
+
+
+window.onload=function(){
+	drawRouletteWheel();
+};
+
+function drawRouletteWheel() {    
+  var canvas = document.getElementById("wheelcanvas");    
+  if (canvas.getContext) {
+	  //get the angle of 
+	  var arc = Math.PI / (turnplate.PrizesName.length/2);
+	  var ctx = canvas.getContext("2d");
+	  //draw a rectangle
+	  ctx.clearRect(0,0,422,422);
+	  
+	  ctx.strokeStyle = "#FFBE04";
+	  
+	  ctx.font = '16px Microsoft YaHei';      
+	  for(var i = 0; i < turnplate.PrizesName.length; i++) {       
+		  var angle = turnplate.startAngle + i * arc;
+		  ctx.fillStyle = turnplate.colors[i];
+		  ctx.beginPath();
+		  //arc(x,y,r,start angle, end angle,draw direction)
+		  ctx.arc(211, 211, turnplate.outsideRadius, angle, angle + arc, false);    
+		  ctx.arc(211, 211, turnplate.insideRadius, angle + arc, angle, true);
+		  ctx.stroke();  
+		  ctx.fill();
+		  //save canvas
+		  ctx.save();   
+		  
+		  ctx.fillStyle = "#E5302F";
+		  var text = turnplate.PrizesName[i];
+		  var line_height = 17;
+		  //translate new(0,0) on the canvas
+		  ctx.translate(211 + Math.cos(angle + arc / 2) * turnplate.textRadius, 211 + Math.sin(angle + arc / 2) * turnplate.textRadius);
+		  
+		  //rotate the text (prize name)
+		  ctx.rotate(angle + arc / 2 + Math.PI / 2);
+		  
+		  /** adjust the size according to the prize's content **/
+		  if(text.indexOf("M")>0){
+			  var texts = text.split("M");
+			  for(var j = 0; j<texts.length; j++){
+				  ctx.font = j == 0?'bold 20px Microsoft YaHei':'16px Microsoft YaHei';
+				  if(j == 0){
+					  ctx.fillText(texts[j]+"M", -ctx.measureText(texts[j]+"M").width / 2, j * line_height);
+				  }else{
+					  ctx.fillText(texts[j], -ctx.measureText(texts[j]).width / 2, j * line_height);
+				  }
+			  }
+		  }else if(text.indexOf("M") == -1 && text.length>6){//name is too long
+			  text = text.substring(0,6)+"||"+text.substring(6);
+			  var texts = text.split("||");
+			  for(var j = 0; j<texts.length; j++){
+				  ctx.fillText(texts[j], -ctx.measureText(texts[j]).width / 2, j * line_height);
+			  }
+		  }else{
+			  ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
+		  }
+		  
+		  if(text.indexOf("$")>0){
+			  var img= document.getElementById("shan-img");
+			  img.onload=function(){  
+				  ctx.drawImage(img,-15,10);      
+			  }; 
+			  ctx.drawImage(img,-15,10);  
+		  }else if(text.indexOf("THANK")>=0){
+			  var img= document.getElementById("sorry-img");
+			  img.onload=function(){  
+				  ctx.drawImage(img,-15,10);      
+			  };  
+			  ctx.drawImage(img,-15,10);  
+		  }
+		  //return canvas to last save() state
+		  ctx.restore();
+		  
+	  }     
+  } 
+}
+
+</script>
+</head>
+<body style="background:#e62d2d;overflow-x:hidden;">
+    <img src="images/1.png" id="shan-img" style="display:none;" />
+    <img src="images/2.png" id="sorry-img" style="display:none;" />
+	<div class="banner">
+		<div class="turnplate" style="background-image:url(images/turnplate-bg.png);background-size:100% 100%;">
+			<canvas class="item" id="wheelcanvas" width="422px" height="422px"></canvas>
+			<img class="pointer" src="images/turnplate-pointer.png"/>
+		</div>
+	</div>
+</body>
+</html>

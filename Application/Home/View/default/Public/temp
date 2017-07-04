@@ -1,0 +1,93 @@
+<div class="demo-nav padding-big-top padding-big-bottom fixed">
+    <div class="container padding-top padding-bottom">
+
+        <div class="line">
+           <!-- <div class="xl12 xs3 xm3 xb2">
+                <button class="button icon-navicon float-right" data-target="#header-demo"></button>
+                <a href="http://www.beyondfw.com"><img src="__STATIC__/bootstrap/img/logo.png" class="ring-hover" alt="前端CCS框架" /></a>
+            </div>
+	  -->
+           <!-- <div class=" xl12 xs9 xm9 xb10 nav-navicon" id="header-demo"> --!>
+            <div class=" nav-navicon row-fluid" id="header-demo">
+
+                <div class="xs8 xm6 xb7 padding-small ">
+                    <ul class="nav nav-menu nav-inline nav-big">
+                        <li><a href=""></a></li>
+                    <!--    <li><a href="http://www.beyondfw.com">首页</a></li>--!>
+                        <li>
+                            <a href="/index.php?s=/home/article/lists/category/system.html">系统<span class="arrow"></span></a>
+                            <ul class="drop-menu">
+                                <li><a href="/index.php?s=/home/article/lists/category/linux.html">Linux</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/apache.html">Apache</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/nginx.html">Nginx</a>
+                                <li><a href="/index.php?s=/home/article/lists/category/redis.html">Redis</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/memcached.html">Memcached</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/mongodb.html">Mongodb</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/mysql.html">Mysql</a></li>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--<li class="active">-->
+                        <li>
+                            <a href="/index.php?s=/home/article/lists/category/algorithmBigData.html">算法大数据<span class="arrow"></span></a>
+                            <ul class="drop-menu">
+                                <li><a href="/index.php?s=/home/article/lists/category/hadoop.html">Hadoop</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/ML.html">Machine Learning</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/RL.html">RL Learing</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/index.php?s=/home/article/lists/category/db.html">cmu课程<span class="arrow"></span></a>
+                            <ul class="drop-menu">
+                                <li><a href="/index.php?s=/home/article/lists/category/SR.html">Speech Recognization</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/CV.html">Computer Vision</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/HWFC.html">How to Write Fast Code</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/ICC.html">Intrduction to Computer System</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/index.php?s=/home/article/lists/category/front.html">读书笔记<span class="arrow"></span></a>
+                            <ul class="drop-menu">
+                                <li><a href="/index.php?s=/home/article/lists/category/leetCode.html">leetCode</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/nodejs.html">C/C++</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/ionic.html">Java</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Python</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Matlab</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">PHP</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Javascript</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">HTML/CSS</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Shell</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="/index.php?s=/home/article/lists/category/front.html">休闲<span class="arrow"></span></a>
+                            <ul class="drop-menu">
+                                <li><a href="/index.php?s=/home/article/lists/category/poem.html">唐诗宋词元曲</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/weeklyJournal.html">周记</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/history.html">历史</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/BeijingOpera.html">京剧</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="xs4 xm3 xb4" style="float:right">
+                    <form class="search">
+                        <div class="input-group padding-little-top">
+                            <input id="word" type="text" class="input border-main" name="keywords" size="30" placeholder="关键词" />
+                            <span id="do" class="addbtn"><button type="button" class="button bg-main icon-search"></button></span>
+                        </div>
+                    </form>
+                </div>
+                <!--<div class="hidden-l hidden-s xm3 xb3">
+                    <div class="text-red text-big icon-phone height-large text-right"> 热线 400 1234567</div>
+                </div>-->
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

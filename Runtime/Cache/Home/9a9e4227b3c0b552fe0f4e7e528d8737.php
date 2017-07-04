@@ -34,21 +34,11 @@
 </head>
 <body>
 <div class="container-fluid" id="LG">
-    <div class="demo-nav padding-big-top padding-big-bottom fixed">
-    <div class="container padding-top padding-bottom">
-
-        <div class="line">
-           <!-- <div class="xl12 xs3 xm3 xb2">
-                <button class="button icon-navicon float-right" data-target="#header-demo"></button>
-                <a href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/logo.png" class="ring-hover" alt="前端CCS框架" /></a>
-            </div>
-	  -->
-           <!-- <div class=" xl12 xs9 xm9 xb10 nav-navicon" id="header-demo"> -->
-            <div class=" nav-navicon" id="header-demo">
-
-                <div class="xs8 xm6 xb7 padding-small">
-                    <ul class="nav nav-menu nav-inline nav-big">
-                        <li><a href="http://www.beyondfw.com">首页</a></li>
+          <div class="navbar navbar-inverse navbar-extra">
+        <div class="container">
+          <div class="navbar-collapse collapse">
+            <ul class="xl12 xs9 xm9 xb10 padding-large nav navbar-nav nav-big nav-inline nav-menu">                              <li></li>
+			<li><a href="http://www.beyondfw.com">首页</a></li>
                         <li>
                             <a href="/index.php?s=/home/article/lists/category/system.html">系统<span class="arrow"></span></a>
                             <ul class="drop-menu">
@@ -74,14 +64,16 @@
                         <li>
                             <a href="/index.php?s=/home/article/lists/category/db.html">cmu课程<span class="arrow"></span></a>
                             <ul class="drop-menu">
-                                <li><a href="/index.php?s=/home/article/lists/category/linux.html">Speech Recognization</a></li>
-                                <li><a href="/index.php?s=/home/article/lists/category/apache.html">Computer Vision</a></li>
-                                <li><a href="/index.php?s=/home/article/lists/category/nginx.html">How to Write Fast Code</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/SR.html">Speech Recognization</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/CV.html">Computer Vision</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/HWFC.html">How to Write Fast Code</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/ICC.html">Intrduction to Computer System</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="/index.php?s=/home/article/lists/category/front.html">编程项目<span class="arrow"></span></a>
+                            <a href="/index.php?s=/home/article/lists/category/front.html">读书笔记<span class="arrow"></span></a>
                             <ul class="drop-menu">
+                                <li><a href="/index.php?s=/home/article/lists/category/leetCode.html">leetCode</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/nodejs.html">C/C++</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/ionic.html">Java</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Python</a></li>
@@ -97,36 +89,19 @@
                             <a href="/index.php?s=/home/article/lists/category/front.html">休闲<span class="arrow"></span></a>
                             <ul class="drop-menu">
                                 <li><a href="/index.php?s=/home/article/lists/category/poem.html">唐诗宋词元曲</a></li>
-                                <li>
-                                    <a href="/index.php?s=/home/article/lists/category/ionic.html">历史</a>
-                                </li>
-                                <li>
-                                    <a href="/index.php?s=/home/article/lists/category/argularjs.html">京剧</a>
-                                </li>
+                                <li><a href="/index.php?s=/home/article/lists/category/weeklyJournal.html">周记</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/history.html">历史</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/BeijingOpera.html">京剧</a></li>
                             </ul>
                         </li>
 
                     </ul>
-                </div>
-                <div class="xs4 xm3 xb4" style="float:right">
-                    <form class="search">
-                        <div class="input-group padding-little-top">
-                            <input id="word" type="text" class="input border-main" name="keywords" size="30" placeholder="关键词" />
-                            <span id="do" class="addbtn"><button type="button" class="button bg-main icon-search"></button></span>
-                        </div>
-                    </form>
-                </div>
-                <!--<div class="hidden-l hidden-s xm3 xb3">
-                    <div class="text-red text-big icon-phone height-large text-right"> 热线 400 1234567</div>
-                </div>-->
 
-            </div>
-
+            
+            
+          </div><!--/.navbar-collapse -->
         </div>
-
-    </div>
-
-</div>
+      </div>
 
     <div class="container">
         <!--div class="line-small">
@@ -209,7 +184,7 @@
         <h3><span class="icon-wrench"></span> 我的标签</h3>
         <h4>
             <div class="tag-ul">
-                <a class="button button-little bg-blue shake-hover" href="/Article/index/a_id/59.html">程序员</a> <a
+<!--                <a class="button button-little bg-blue shake-hover" href="/Article/index/a_id/59.html">程序员</a> <a
                     class="button button-little bg-yellow shake-hover" href="/Article/index/a_id/58.html">Apache</a> <a
                     class="button button-little bg-red shake-hover" href="/Article/index/a_id/57.html">代码高亮</a> <a
                     class="button button-little bg-sub shake-hover" href="/Article/index/a_id/56.html">Sublime text</a>
@@ -246,15 +221,17 @@
                     class="button button-little bg-main shake-hover" href="/Article/index/a_id/13.html">字号与像素的转换</a> <a
                     class="button button-little bg-blue shake-hover" href="/Article/index/a_id/11.html">代码</a> <a
                     class="button button-little bg-blue shake-hover" href="/Article/index/a_id/5.html">PHP</a> <a
-                    class="button button-little bg-yellow shake-hover" href="/Article/index/a_id/4.html">Thinkphp</a>
+                    class="button button-little bg-yellow shake-hover" href="/Article/index/a_id/4.html">Thinkphp</a> 
+-->
             </div>
         </h4>
     </div>
     <hr>
     <div>
-        <h2 class="bg-main text-white padding">热点文章</h2>
+       <!-- <h2 class="bg-main text-white padding">热点文章</h2>-->
+        <h2 class="bg-main text-white padding">还没想好</h2>
         <div class="padding-big bg">
-            <ul class="list-media list-underline">
+<!--            <ul class="list-media list-underline">
                 <li>
                     <div class="media media-x">
                         <a class="float-left" href="http://www.beyondfw.com"><img src="/Public/static/bootstrap/img/e1.jpg" class="radius" alt="..."></a>
@@ -291,7 +268,7 @@
                         <div class="media-body"><strong>方便的自定义配色</strong>拼图可根据项目需要，根据项目自由配色，可使界面丰富多彩。 <a class="button button-little border-green swing-hover" href="http://www.beyondfw.com">查看详情</a></div>
                     </div>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </div>
     <hr>
@@ -313,10 +290,8 @@
                         </a>
                         <div class="media-body">
                             <strong><span class="icon-paper-plane"></span>  兴国兴家</strong>
-                            <span class="tag bg-dot">Win 7</span> 非常好用,很是值得学习和借鉴,非常感谢.
-                            文章管理中,不能上传图像,是bug,还是楼主将功能屏蔽掉,还是我自己的设置问题.
-                            还发现,编辑器,有时不随着走,不是每次都会有.
-                            再次感谢楼主提供的源码,受益匪浅.							</div>
+                            <span class="tag bg-dot">Win 7</span> 好好学习，天天向上	
+			</div>
                     </div>
                 </div><div class="panel-group" style="border-top: solid 0px #ddd;">
                 <div class="media media-x">
@@ -324,8 +299,8 @@
                         <img src="http://q.qlogo.cn/qqapp/101250624/9491E2D161E61ED506003B33E9AC7787/100" class="radius-circle" width="60px" height="60px">
                     </a>
                     <div class="media-body">
-                        <strong><span class="icon-paper-plane"></span>  爱网络 爱生活</strong>
-                        <span class="tag bg-dot">Win 10</span> 您好 使用您的程序提示无法连接数据库是什么意思啊  tp配好了							</div>
+                        <strong><span class="icon-paper-plane"></span> 爱编程 爱生活</strong>
+                        <span class="tag bg-dot">Win 10</span> 以后不准熬夜			</div>
                 </div>
             </div><div class="panel-group" style="border-top: solid 0px #ddd;">
                 <div class="media media-x">
@@ -364,6 +339,7 @@
 
 
 </div>
+
         </div>
     </div>
 
