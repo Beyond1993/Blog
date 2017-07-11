@@ -1,5 +1,5 @@
 #!/bin/bash
-while sleep 10
+while sleep 18000
 do
 mysqldump -u root -p8111249 blog > ./blogbackup.sql
 sudo git add .
