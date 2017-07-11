@@ -1,0 +1,1612 @@
+[ 2017-07-11T00:48:07+08:00 ] 73.93.152.243 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000310s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000344s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2017-07-11T01:10:34+08:00 ] 157.55.39.139 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000312s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000335s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000053s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-07-11T01:50:10+08:00 ] 73.93.152.243 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-07-11T05:20:06+08:00 ] 109.201.142.109 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000280s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000346s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000054s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-07-11T05:49:55+08:00 ] 198.91.116.182 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000317s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000345s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000091s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000062s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-07-11T07:18:51+08:00 ] 71.6.202.204 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000313s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000327s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-07-11T07:25:44+08:00 ] 198.91.116.182 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000308s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000364s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000052s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2017-07-11T07:25:52+08:00 ] 198.91.116.182 /index.php?s=/home/article/lists/category/leetCode.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000308s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000331s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'leetCode' ) LIMIT 1   [ RunTime:0.000052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 AND category_id=61 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 AND category_id=61 ) ORDER BY create_time LIMIT 0,15   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-07-11T07:26:00+08:00 ] 198.91.116.182 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
+
+[ 2017-07-11T07:26:17+08:00 ] 198.91.116.182 /index.php?s=/Admin/Index/index.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000336s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000050s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Index/index%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000276s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 1 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 1 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000286s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SiteStat' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_member` [ RunTime:0.000290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_member` LIMIT 1   [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `ot_action_log` [ RunTime:0.000251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_action_log` LIMIT 1   [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000317s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` LIMIT 1   [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000338s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_category` LIMIT 1   [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000300s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_model` LIMIT 1   [ RunTime:0.000058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005162s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run SiteStat [ RunTime:0.004538s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SystemInfo' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006552s ]
+SQL: select version() as v; [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001242s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001526s ]
+INFO: Run SystemInfo [ RunTime:0.001538s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'DevTeam' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007991s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000844s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002705s ]
+INFO: Run DevTeam [ RunTime:0.001160s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.007291s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000940s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000003s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-07-11T07:26:24+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/mydocument.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000357s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000051s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/mydocument%' ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000269s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000231s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000367s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000321s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `uid` = 1 ) AND ( `pid` = 0 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `uid` = 1 ) AND ( `pid` = 0 ) ORDER BY update_time desc LIMIT 0,10   [ RunTime:0.000071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000440s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=59 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=58 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=57 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=56 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=55 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=54 ) LIMIT 1   [ RunTime:0.000079s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=49 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=44 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=45 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=47 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-07-11T07:26:31+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/edit/cate_id/61/id/59.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000344s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000256s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000225s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000324s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000044s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000309s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 59 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000242s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 59 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000291s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000297s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000060s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000397s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008641s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run EditorForAdmin [ RunTime:0.003135s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003160s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-07-11T07:27:11+08:00 ] 198.91.116.182 /index.php?s=/Admin/article/index/cate_id/53.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000351s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000300s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000035s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000050s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000239s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000345s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000315s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000323s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 53 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 53 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-07-11T07:27:16+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000379s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000273s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000232s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000325s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000317s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000307s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-07-11T07:27:19+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/edit/id/59/model/1/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000367s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000252s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000276s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000327s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000306s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 59 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000249s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 59 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000297s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000299s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000062s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000342s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008643s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run EditorForAdmin [ RunTime:0.003107s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003133s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-11T07:27:22+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000352s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000062s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000268s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000241s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000334s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000058s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000319s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000320s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-07-11T07:27:27+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/edit/id/56/model/1/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000346s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000260s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000035s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000236s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000327s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000044s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000322s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 56 ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000249s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 56 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000304s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000331s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000058s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000332s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008539s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run EditorForAdmin [ RunTime:0.003012s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003039s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2017-07-11T07:27:35+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000350s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000256s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000247s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000342s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000047s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000303s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000303s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-07-11T07:27:44+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/edit/id/40/model/1/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000347s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000282s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000035s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000034s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000211s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000318s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000043s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000382s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000265s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000310s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000387s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000055s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000292s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008441s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run EditorForAdmin [ RunTime:0.002914s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.002937s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-07-11T07:29:37+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000396s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000051s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000264s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000238s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000324s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000306s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000359s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-07-11T07:29:45+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/edit/id/56/model/1/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000357s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000045s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000272s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000035s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000033s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000034s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000231s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000316s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000311s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 56 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000242s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 56 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000289s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000300s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000062s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000370s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008576s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run EditorForAdmin [ RunTime:0.003079s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003103s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2017-07-11T07:42:10+08:00 ] 61.160.247.63 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000297s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000333s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-11T07:45:52+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000353s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000056s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000326s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000043s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000323s ]
+SQL: SELECT `id` FROM `ot_document` WHERE ( `root` = 0 ) AND ( `name` = 'leetcode' ) AND ( `id` <> '56' ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 56 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: UPDATE `ot_document` SET `title`='一句话总结 leetcode',`name`='leetcode',`description`='leetcode one line',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=1,`comment`=0,`create_time`=1497985860,`deadline`=0,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=61,`root`=0,`update_time`=1499730351,`status`=1,`position`=0 WHERE ( `id` = 56 ) [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000254s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 178 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>1<span class=\"Apple-tab-span\" style=\"white-space: pre;\">	</span>Two Sum &nbsp; <span class=\"Apple-tab-span\" style=\"white-space: pre;\">		</span>33.8%<span class=\"Apple-tab-span\" style=\"white-space: pre;\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space: pre;\">	</span></p><p>找出两个和为target的，下标组合</p><p>解法一:用一个map, key 是元素值, value 是下标．</p><p>解法二：先排序，再通过前后两指针来找出下标．</p><p><br/></p><p>2<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Add Two Numbers &nbsp; <span class=\"Apple-tab-span\" style=\"white-space: pre;\">		</span>27.5%<span class=\"Apple-tab-span\" style=\"white-space: pre;\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space: pre;\">	</span></p><p>两个链表相加．</p><p>int sum = ((l2 == null) ? 0 : l2.val ) + ((l1 == null) ? 0 : l1.val) + carry;</p><p></p><p>3 &nbsp; &nbsp;Longest Substring Without Repeating Characters &nbsp; <span class=\"Apple-tab-span\" style=\"white-space: pre;\">		</span>24.2%<span class=\"Apple-tab-span\" style=\"white-space: pre;\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space: pre;\">	</span></p><p>不包含重复字符的最长子串．</p><p>窗口指针．一前一后往后走．<br/></p><p><br/></p><p>窗口指针模板：</p><p><br/></p><p>4<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Median of Two Sorted Arrays &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>21.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>5<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Longest Palindromic Substring &nbsp; &nbsp;<span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>25.1%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>6<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>ZigZag Conversion &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>26.6%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>7<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Reverse Integer &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>24.3%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>8<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>String to Integer (atoi) &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>14.0%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>9<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Palindrome Number &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>35.1%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>10<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Regular Expression Matching &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>24.0%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>11<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Container With Most Water &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>36.4%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>12<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Integer to Roman &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>44.3%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>13<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Roman to Integer &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>45.4%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>14<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Longest Common Prefix &nbsp; &nbsp;<span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>31.4%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>15<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>3Sum &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>21.6%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>16<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>3Sum Closest &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>31.0%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>17<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Letter Combinations of a Phone Number &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>34.1%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>18<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>4Sum &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>26.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>19<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Remove Nth Node From End of List &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>33.2%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>20<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Valid Parentheses &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>33.2%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>21<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Merge Two Sorted Lists &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>39.0%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>22<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Generate Parentheses &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>44.3%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>23<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Merge k Sorted Lists &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>27.0%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>24<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Swap Nodes in Pairs &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>38.1%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>25<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Reverse Nodes in k-Group &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>30.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>26<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Remove Duplicates from Sorted Array &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>35.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>27<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Remove Element &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>38.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>28<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Implement strStr() &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>27.9%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>29<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Divide Two Integers &nbsp; &nbsp;<span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>16.0%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>30<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Substring with Concatenation of All Words &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>21.9%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>31<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Next Permutation &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>28.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>32<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Longest Valid Parentheses &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>23.0%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>33<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Search in Rotated Sorted Array &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>32.1%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>34<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Search for a Range &nbsp; &nbsp;<span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>31.3%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>35<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Search Insert Position &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>39.6%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>36<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Valid Sudoku &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>35.4%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>37<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Sudoku Solver &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>29.8%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>38<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Count and Say &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>34.2%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>39<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Combination Sum &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>38.0%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>40<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Combination Sum II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>33.3%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>41<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>First Missing Positive &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>25.4%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>42<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Trapping Rain Water &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>36.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>43<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Multiply Strings &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>26.9%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>44<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Wildcard Matching &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>19.9%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>45<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Jump Game II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>26.1%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>46<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Permutations &nbsp; &nbsp;<span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>43.1%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>47<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Permutations II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>32.4%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>48<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Rotate Image &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>38.3%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>49<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Group Anagrams &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>34.1%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>50<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Pow(x, n) &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>26.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>51<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>N-Queens &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>30.6%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>52<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>N-Queens II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>44.4%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>53<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Maximum Subarray &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>39.4%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>54<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Spiral Matrix &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>25.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>55<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Jump Game &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>29.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>56<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Merge Intervals &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>29.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>57<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Insert Interval &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>27.4%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>58<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Length of Last Word &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>31.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>59<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Spiral Matrix II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>39.3%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>60<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Permutation Sequence &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>28.2%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>61<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Rotate List &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>24.3%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>62<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Unique Paths &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>40.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>63<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Unique Paths II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>31.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>64<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Minimum Path Sum &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>38.2%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>65<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Valid Number &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>12.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>66<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Plus One &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>38.3%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>67<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Add Binary &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>32.1%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>68<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Text Justification &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>18.9%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>69<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Sqrt(x) &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>27.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>70<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Climbing Stairs &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>39.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>71<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Simplify Path &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>25.0%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>72<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Edit Distance &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>31.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>73<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Set Matrix Zeroes &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>35.8%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>74<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Search a 2D Matrix &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>35.2%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>75<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Sort Colors &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>37.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>76<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Minimum Window Substring &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>25.0%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>77<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Combinations &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>39.3%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>78<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Subsets &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>39.8%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>79<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Word Search &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>26.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>80<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Remove Duplicates from Sorted Array II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>35.8%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>81<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Search in Rotated Sorted Array II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>32.8%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>82<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Remove Duplicates from Sorted List II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>29.3%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>83<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Remove Duplicates from Sorted List &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>39.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>84<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Largest Rectangle in Histogram &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>26.4%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>85<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Maximal Rectangle &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>27.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>86<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Partition List &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>32.4%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>87<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Scramble String &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>28.9%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>88<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Merge Sorted Array &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>31.9%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>89<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Gray Code &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>40.8%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>90<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Subsets II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>35.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>91<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Decode Ways &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>19.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>92<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Reverse Linked List II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>30.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>93<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Restore IP Addresses &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>27.0%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>94<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Binary Tree Inorder Traversal &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>46.1%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>95<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Unique Binary Search Trees II &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>31.2%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>96<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Unique Binary Search Trees &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>40.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>97<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Interleaving String &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>24.5%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>98<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Validate Binary Search Tree &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>23.1%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Medium<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>99<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Recover Binary Search Tree &nbsp; <span class=\"Apple-tab-span\" style=\"white-space:pre\">		</span>29.7%<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span>Hard<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>100<span class=\"Apple-tab-span\" style=\"white-space:pre\">	</span></p><p>Same Tree &nbsp; <span class=\"Apple-tab-span\" style=\"white-space: pre;\">		</span>46.3%<span class=\"Apple-tab-span\" style=\"white-space: pre;\">	</span>Easy<span class=\"Apple-tab-span\" style=\"white-space: pre;\">	</span></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 56 ) [ RunTime:0.000695s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.000090s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 189 行.
+
+[ 2017-07-11T07:45:53+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000361s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000270s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000231s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000329s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000305s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000310s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000206s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-07-11T07:47:30+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/edit/id/51/model/1/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000352s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000251s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000266s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000329s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000321s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000245s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000315s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000290s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000060s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000394s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008764s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run EditorForAdmin [ RunTime:0.003171s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003197s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-07-11T07:48:12+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000375s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000268s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000082s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000314s ]
+SQL: SELECT `id` FROM `ot_document` WHERE ( `root` = 0 ) AND ( `name` = 'list' ) AND ( `id` <> '51' ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: UPDATE `ot_document` SET `title`='leetCode前50题小结-链表',`name`='list',`description`='leetCode 刷题链表总结',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=29,`comment`=0,`create_time`=1467341640,`deadline`=0,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=61,`root`=0,`update_time`=1499730492,`status`=1,`position`=0 WHERE ( `id` = 51 ) [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000278s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 178 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>链表是面试最常见的题目，因为链表一般思路简单，但是实现起来却有很多细节要考虑。一旦思路不对，就会陷入各种指针跳来跳去的尴尬。</p><p>链表的操作：</p><p>1，反转 25. Reverse Nodes in k-Group.</p><p>之前以为链表反转很简单，谁知今天做了好长时间才做出来，主要还是思路不明确。痛定思痛，好好整理</p><p>其实反转所有的操作都是针对current 指针的，短短四行代码，浓缩的都是精华。</p><p>设置 last 和 cur 指针 分别指向链表的前两个节点（当然dumy节点不算),</p><p>第一步：把cur节点分离出来，把cur的下一个节点 用last 把链表连上 last-&gt;next = cur-&gt;next;</p><p>第二步和第三步是一个操作：把cur 节点插入dumy 和第一个节点之间 cur-&gt;next = pre-&gt;next; pre-&gt;next = cur;</p><p>第四步：将cur 指针后移一位， cur = last-&gt;next;</p><p>while(cur != NULL){</p><p>&nbsp; &nbsp; last-&gt;next = cur-&gt;next;</p><p>&nbsp; &nbsp; cur-&gt;next = pre-&gt;next;</p><p>&nbsp; &nbsp; pre-&gt;next = cur;</p><p>&nbsp; &nbsp; cur = last-&gt;next;</p><p>}</p><p>这是一个完美的圈。</p><p>注意：</p><p>1,不能用随便new一个节点 tmp 保存 cur-&gt;next, 不然会断链</p><p>2,pre 与 last 指针指向的节点是不变的， 变得只有cur 指向的节点，变与不变。</p><p>3,不能 用 cur 代替 cur-&gt;next = pre-&gt;next 里的 pre-&gt;next, 因为不是两个节点相互反转，而是不断的往前插入</p><p>以 0-&gt;1-&gt;2-&gt;3-&gt;4 为例：</p><p>一句话总结：current 插向前，0,1 永不变。</p><p>链表的问题：</p><p>1，dumy 节点</p><p>2，断链</p><p>3，空指针</p><p>4，迭代时的指针逻辑错误</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 51 ) [ RunTime:0.000146s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.000083s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 189 行.
+
+[ 2017-07-11T07:48:13+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000356s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000267s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000274s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000320s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000329s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000206s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000232s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-07-11T07:48:19+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/edit/id/51/model/1/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000356s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000056s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000262s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000230s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000323s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000317s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000255s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000136s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000347s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000301s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000061s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000451s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008952s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run EditorForAdmin [ RunTime:0.003208s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003236s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-11T07:48:32+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000352s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000050s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000256s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000309s ]
+SQL: SELECT `id` FROM `ot_document` WHERE ( `root` = 0 ) AND ( `name` = 'list' ) AND ( `id` <> '51' ) LIMIT 1   [ RunTime:0.000182s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: UPDATE `ot_document` SET `title`='leetCode小结-链表',`name`='list',`description`='leetCode 刷题链表总结',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=29,`comment`=0,`create_time`=1467341640,`deadline`=0,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=61,`root`=0,`update_time`=1499730512,`status`=1,`position`=0 WHERE ( `id` = 51 ) [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 178 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>链表是面试最常见的题目，因为链表一般思路简单，但是实现起来却有很多细节要考虑。一旦思路不对，就会陷入各种指针跳来跳去的尴尬。</p><p>链表的操作：</p><p>1，反转 25. Reverse Nodes in k-Group.</p><p>之前以为链表反转很简单，谁知今天做了好长时间才做出来，主要还是思路不明确。痛定思痛，好好整理</p><p>其实反转所有的操作都是针对current 指针的，短短四行代码，浓缩的都是精华。</p><p>设置 last 和 cur 指针 分别指向链表的前两个节点（当然dumy节点不算),</p><p>第一步：把cur节点分离出来，把cur的下一个节点 用last 把链表连上 last-&gt;next = cur-&gt;next;</p><p>第二步和第三步是一个操作：把cur 节点插入dumy 和第一个节点之间 cur-&gt;next = pre-&gt;next; pre-&gt;next = cur;</p><p>第四步：将cur 指针后移一位， cur = last-&gt;next;</p><p>while(cur != NULL){</p><p>&nbsp; &nbsp; last-&gt;next = cur-&gt;next;</p><p>&nbsp; &nbsp; cur-&gt;next = pre-&gt;next;</p><p>&nbsp; &nbsp; pre-&gt;next = cur;</p><p>&nbsp; &nbsp; cur = last-&gt;next;</p><p>}</p><p>这是一个完美的圈。</p><p>注意：</p><p>1,不能用随便new一个节点 tmp 保存 cur-&gt;next, 不然会断链</p><p>2,pre 与 last 指针指向的节点是不变的， 变得只有cur 指向的节点，变与不变。</p><p>3,不能 用 cur 代替 cur-&gt;next = pre-&gt;next 里的 pre-&gt;next, 因为不是两个节点相互反转，而是不断的往前插入</p><p>以 0-&gt;1-&gt;2-&gt;3-&gt;4 为例：</p><p>一句话总结：current 插向前，0,1 永不变。</p><p>链表的问题：</p><p>1，dumy 节点</p><p>2，断链</p><p>3，空指针</p><p>4，迭代时的指针逻辑错误</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 51 ) [ RunTime:0.000127s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.000085s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 189 行.
+
+[ 2017-07-11T07:48:33+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000351s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000050s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000265s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000239s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000319s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000313s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000298s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000215s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-07-11T07:48:38+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/edit/id/51/model/1/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000352s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000051s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000260s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000230s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000372s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000317s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000250s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000304s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000295s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000059s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000393s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008856s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run EditorForAdmin [ RunTime:0.003151s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003177s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-07-11T08:08:28+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000352s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000251s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000352s ]
+SQL: SELECT `id` FROM `ot_document` WHERE ( `root` = 0 ) AND ( `name` = 'list' ) AND ( `id` <> '51' ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: UPDATE `ot_document` SET `title`='leetCode小结-链表',`name`='list',`description`='leetCode 刷题链表总结',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=29,`comment`=0,`create_time`=1467341640,`deadline`=0,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=61,`root`=0,`update_time`=1499731708,`status`=1,`position`=0 WHERE ( `id` = 51 ) [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000247s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 178 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>链表是面试最常见的题目，因为链表一般思路简单，但是实现起来却有很多细节要考虑。一旦思路不对，就会陷入各种指针跳来跳去的尴尬。</p><p>链表的操作：</p><p>１，链表找中点：</p><p><br/></p><p>ListNode slow = head, fast = head.next;</p><p>while( fast != null &amp;&amp; fast.next != null) {</p><p>&nbsp;&nbsp;&nbsp;&nbsp; fast = fast.next.next;<br/></p><p>&nbsp;&nbsp;&nbsp;&nbsp; slow = slow.next;<br/></p><p>}</p><p><br/></p><p>注意点1: fast 是从head.next 开始，而不是head 开始．因为如果从head 开始，那链表数是偶数时，会找到中点的后一点．</p><p>注意点2:终止条件 fast != null 针对于链表个数为奇数， fast.next != null 针对于链表个数是偶数．</p><p><br/></p><p>这和数组的中点, length / 2 的结果是一致的. &nbsp;</p><p><br/></p><p><br/></p><p><br/></p><p>２，反转 25. Reverse Nodes in K-Group.</p><p>之前以为链表反转很简单，谁知今天做了好长时间才做出来，主要还是思路不明确。痛定思痛，好好整理</p><p>其实反转所有的操作都是针对current 指针的，短短四行代码，浓缩的都是精华。</p><p>设置 last 和 cur 指针 分别指向链表的前两个节点（当然dumy节点不算),</p><p>第一步：把cur节点分离出来，把cur的下一个节点 用last 把链表连上 last-&gt;next = cur-&gt;next;</p><p>第二步和第三步是一个操作：把cur 节点插入dumy 和第一个节点之间 cur-&gt;next = pre-&gt;next; pre-&gt;next = cur;</p><p>第四步：将cur 指针后移一位， cur = last-&gt;next;</p><p>while(cur != NULL){</p><p>&nbsp; &nbsp; last-&gt;next = cur-&gt;next;</p><p>&nbsp; &nbsp; cur-&gt;next = pre-&gt;next;</p><p>&nbsp; &nbsp; pre-&gt;next = cur;</p><p>&nbsp; &nbsp; cur = last-&gt;next;</p><p>}</p><p>这是一个完美的圈。</p><p>注意：</p><p>1,不能用随便new一个节点 tmp 保存 cur-&gt;next, 不然会断链</p><p>2,pre 与 last 指针指向的节点是不变的， 变得只有cur 指向的节点，变与不变。</p><p>3,不能 用 cur 代替 cur-&gt;next = pre-&gt;next 里的 pre-&gt;next, 因为不是两个节点相互反转，而是不断的往前插入</p><p>以 0-&gt;1-&gt;2-&gt;3-&gt;4 为例：</p><p>一句话总结：current 插向前，0,1 永不变。</p><p>链表的问题：</p><p>1，dumy 节点</p><p>2，断链</p><p>3，空指针</p><p>4，迭代时的指针逻辑错误</p><p><br/></p><p>反转链表的迭代写法．</p><p><br/></p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 51 ) [ RunTime:0.000156s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.000081s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 189 行.
+
+[ 2017-07-11T08:08:29+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000421s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000051s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000270s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000243s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000322s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000324s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000332s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-11T08:10:41+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/edit/id/51/model/1/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000349s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000050s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000257s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000241s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000331s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000047s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000342s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000257s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000339s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000296s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000059s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000400s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008760s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run EditorForAdmin [ RunTime:0.003155s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003183s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-07-11T08:11:26+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000367s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000263s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000049s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000313s ]
+SQL: SELECT `id` FROM `ot_document` WHERE ( `root` = 0 ) AND ( `name` = 'list' ) AND ( `id` <> '51' ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: UPDATE `ot_document` SET `title`='leetCode小结-链表',`name`='list',`description`='leetCode 刷题链表总结',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=29,`comment`=0,`create_time`=1467341640,`deadline`=0,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=61,`root`=0,`update_time`=1499731886,`status`=1,`position`=0 WHERE ( `id` = 51 ) [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000264s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 178 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>链表是面试最常见的题目，因为链表一般思路简单，但是实现起来却有很多细节要考虑。一旦思路不对，就会陷入各种指针跳来跳去的尴尬。</p><p>链表的操作：</p><p>１，链表找中点：</p><p><br/></p><p>ListNode slow = head, fast = head.next;</p><p>while( fast != null &amp;&amp; fast.next != null) {</p><p>&nbsp;&nbsp;&nbsp;&nbsp; fast = fast.next.next;<br/></p><p>&nbsp;&nbsp;&nbsp;&nbsp; slow = slow.next;<br/></p><p>}</p><p><br/></p><p>注意点1: fast 是从head.next 开始，而不是head 开始．因为如果从head 开始，那链表数是偶数时，会找到中点的后一点．</p><p>注意点2:终止条件 fast != null 针对于链表个数为奇数， fast.next != null 针对于链表个数是偶数．</p><p><br/></p><p>这和数组的中点, length / 2 的结果是一致的. &nbsp;</p><p><br/></p><p><br/></p><p><br/></p><p>２，反转 25. Reverse Nodes in K-Group.</p><p>之前以为链表反转很简单，谁知今天做了好长时间才做出来，主要还是思路不明确。痛定思痛，好好整理</p><p>其实反转所有的操作都是针对current 指针的，短短四行代码，浓缩的都是精华。</p><p>设置 last 和 cur 指针 分别指向链表的前两个节点（当然dumy节点不算),</p><p>第一步：把cur节点分离出来，把cur的下一个节点 用last 把链表连上 last-&gt;next = cur-&gt;next;</p><p>第二步和第三步是一个操作：把cur 节点插入dumy 和第一个节点之间 cur-&gt;next = pre-&gt;next; pre-&gt;next = cur;</p><p>第四步：将cur 指针后移一位， cur = last-&gt;next;</p><p>while(cur != NULL){</p><p>&nbsp; &nbsp; last-&gt;next = cur-&gt;next;</p><p>&nbsp; &nbsp; cur-&gt;next = pre-&gt;next;</p><p>&nbsp; &nbsp; pre-&gt;next = cur;</p><p>&nbsp; &nbsp; cur = last-&gt;next;</p><p>}</p><p>这是一个完美的圈。</p><p>注意：</p><p>1,不能用随便new一个节点 tmp 保存 cur-&gt;next, 不然会断链</p><p>2,pre 与 last 指针指向的节点是不变的， 变得只有cur 指向的节点，变与不变。</p><p>3,不能 用 cur 代替 cur-&gt;next = pre-&gt;next 里的 pre-&gt;next, 因为不是两个节点相互反转，而是不断的往前插入</p><p>以 0-&gt;1-&gt;2-&gt;3-&gt;4 为例：</p><p>一句话总结：current 插向前，0,1 永不变。</p><p>链表的问题：</p><p>1，dumy 节点</p><p>2，断链</p><p>3，空指针</p><p>4，迭代时的指针逻辑错误</p><p><br/></p><p>反转链表的迭代写法．</p><p><br/></p><p>２．Add Two Numbers</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 51 ) [ RunTime:0.000159s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.000083s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 189 行.
+
+[ 2017-07-11T08:11:28+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000361s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000051s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000262s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000230s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000327s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000350s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000315s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000215s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-07-11T08:11:33+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/edit/id/56/model/1/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000361s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000050s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000258s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000088s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000228s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000330s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000047s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000316s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 56 ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000248s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 56 ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000351s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000293s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000059s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000407s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008865s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run EditorForAdmin [ RunTime:0.003199s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003224s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-07-11T08:12:19+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000360s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000264s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000059s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000238s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000330s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000310s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-07-11T08:12:30+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/edit/id/51/model/1/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000345s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000050s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000264s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000084s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000051s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000225s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000314s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000044s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000308s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000251s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000121s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000291s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000288s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000060s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000398s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008643s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run EditorForAdmin [ RunTime:0.003201s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003226s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-07-11T08:13:39+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000363s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000303s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000049s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000313s ]
+SQL: SELECT `id` FROM `ot_document` WHERE ( `root` = 0 ) AND ( `name` = 'list' ) AND ( `id` <> '51' ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 51 ) LIMIT 1   [ RunTime:0.000123s ]
+SQL: UPDATE `ot_document` SET `title`='leetCode小结-链表',`name`='list',`description`='leetCode 刷题链表总结',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=29,`comment`=0,`create_time`=1467341640,`deadline`=0,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=61,`root`=0,`update_time`=1499732019,`status`=1,`position`=0 WHERE ( `id` = 51 ) [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 178 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>链表是面试最常见的题目，因为链表一般思路简单，但是实现起来却有很多细节要考虑。一旦思路不对，就会陷入各种指针跳来跳去的尴尬。</p><p>链表的操作：</p><p>１，链表找中点：</p><p><br/></p><p>ListNode slow = head, fast = head.next;</p><p>while( fast != null &amp;&amp; fast.next != null) {</p><p>&nbsp;&nbsp;&nbsp;&nbsp; fast = fast.next.next;<br/></p><p>&nbsp;&nbsp;&nbsp;&nbsp; slow = slow.next;<br/></p><p>}</p><p><br/></p><p>注意点1: fast 是从head.next 开始，而不是head 开始．因为如果从head 开始，那链表数是偶数时，会找到中点的后一点．</p><p>注意点2:终止条件 fast != null 针对于链表个数为奇数， fast.next != null 针对于链表个数是偶数．</p><p><br/></p><p>这和数组的中点, length / 2 的结果是一致的. &nbsp;</p><p><br/></p><p><br/></p><p><br/></p><p>２，反转 25. Reverse Nodes in K-Group.</p><p>之前以为链表反转很简单，谁知今天做了好长时间才做出来，主要还是思路不明确。痛定思痛，好好整理</p><p>其实反转所有的操作都是针对current 指针的，短短四行代码，浓缩的都是精华。</p><p>设置 last 和 cur 指针 分别指向链表的前两个节点（当然dumy节点不算),</p><p>第一步：把cur节点分离出来，把cur的下一个节点 用last 把链表连上 last-&gt;next = cur-&gt;next;</p><p>第二步和第三步是一个操作：把cur 节点插入dumy 和第一个节点之间 cur-&gt;next = pre-&gt;next; pre-&gt;next = cur;</p><p>第四步：将cur 指针后移一位， cur = last-&gt;next;</p><p>while(cur != NULL){</p><p>&nbsp; &nbsp; last-&gt;next = cur-&gt;next;</p><p>&nbsp; &nbsp; cur-&gt;next = pre-&gt;next;</p><p>&nbsp; &nbsp; pre-&gt;next = cur;</p><p>&nbsp; &nbsp; cur = last-&gt;next;</p><p>}</p><p>这是一个完美的圈。</p><p>注意：</p><p>1,不能用随便new一个节点 tmp 保存 cur-&gt;next, 不然会断链</p><p>2,pre 与 last 指针指向的节点是不变的， 变得只有cur 指向的节点，变与不变。</p><p>3,不能 用 cur 代替 cur-&gt;next = pre-&gt;next 里的 pre-&gt;next, 因为不是两个节点相互反转，而是不断的往前插入</p><p>以 0-&gt;1-&gt;2-&gt;3-&gt;4 为例：</p><p>一句话总结：current 插向前，0,1 永不变。</p><p>链表的问题：</p><p>1，dumy 节点</p><p>2，断链</p><p>3，空指针</p><p>4，迭代时的指针逻辑错误</p><p><br/></p><p>反转链表的迭代写法．</p><p><br/></p><p>２．Add Two Numbers</p><p><br/></p><p>19. Remove Nth Node From End of List.</p><p><br/></p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 51 ) [ RunTime:0.000156s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.000090s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 189 行.
+
+[ 2017-07-11T08:13:40+08:00 ] 198.91.116.182 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000351s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000050s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000281s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000047s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000248s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000314s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000295s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000314s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,10   [ RunTime:0.000225s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-07-11T12:22:01+08:00 ] 73.93.155.15 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000315s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000331s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000129s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000209s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000077s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-07-11T12:22:05+08:00 ] 73.93.155.15 /index.php?s=/home/article/lists/category/leetCode.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000325s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000377s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'leetCode' ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 AND category_id=61 ) LIMIT 1   [ RunTime:0.000182s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 AND category_id=61 ) ORDER BY create_time LIMIT 0,15   [ RunTime:0.000202s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000052s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000052s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+

@@ -1,1 +1,3 @@
 mysqldump -u root -p blog > ./blogbackup.sql
+
+password:8111249
