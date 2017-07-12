@@ -74,8 +74,8 @@
                             <a href="/index.php?s=/home/article/lists/category/front.html">读书笔记<span class="arrow"></span></a>
                             <ul class="drop-menu">
                                 <li><a href="/index.php?s=/home/article/lists/category/leetCode.html">leetCode</a></li>
-                                <li><a href="/index.php?s=/home/article/lists/category/nodejs.html">C/C++</a></li>
-                                <li><a href="/index.php?s=/home/article/lists/category/ionic.html">Java</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/CorCPlusPlus.html">C/C++</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/Java.html">Java</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Python</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Matlab</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">PHP</a></li>
