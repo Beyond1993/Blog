@@ -1965,3 +1965,33 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
 
+[ 2017-07-13T22:35:23+08:00 ] 113.88.87.230 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000312s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000332s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000243s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000059s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000087s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000057s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=48 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
