@@ -3074,3 +3074,1357 @@ SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000266s ]
 NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
 SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000187s ]
 
+[ 2017-07-14T04:07:21+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000350s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000045s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000253s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000351s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: UPDATE `ot_document` SET `title`='remove erase',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499976441,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499976441,`status`=3,`position`=0 WHERE ( `id` = 75 ) [ RunTime:0.000136s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000246s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000158s ]
+
+[ 2017-07-14T04:08:22+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000359s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000055s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000316s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000296s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: UPDATE `ot_document` SET `title`='remove erase',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499976502,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499976502,`status`=3,`position`=0 WHERE ( `id` = 75 ) [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000161s ]
+
+[ 2017-07-14T04:09:23+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000372s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000255s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000341s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: UPDATE `ot_document` SET `title`='remove erase',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499976563,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499976563,`status`=3,`position`=0 WHERE ( `id` = 75 ) [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000249s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000167s ]
+
+[ 2017-07-14T04:10:24+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000372s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000058s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000264s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000327s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: UPDATE `ot_document` SET `title`='remove erase',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499976624,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499976624,`status`=3,`position`=0 WHERE ( `id` = 75 ) [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000167s ]
+
+[ 2017-07-14T04:11:25+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000369s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000256s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000044s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000326s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: UPDATE `ot_document` SET `title`='remove erase',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499976685,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499976685,`status`=3,`position`=0 WHERE ( `id` = 75 ) [ RunTime:0.000137s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000161s ]
+
+[ 2017-07-14T04:12:21+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000349s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000271s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000277s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000327s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000047s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000309s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000314s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-07-14T04:12:26+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000348s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000056s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000303s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000316s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000130s ]
+SQL: UPDATE `ot_document` SET `title`='remove erase',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499976746,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499976746,`status`=3,`position`=0 WHERE ( `id` = 75 ) [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000268s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000161s ]
+
+[ 2017-07-14T04:12:43+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/index/cate_id/64.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000377s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000273s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000274s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000366s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000293s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000318s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-07-14T04:12:46+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/edit/id/74/model/1/cate_id/64.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000359s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000042s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000262s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000035s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000034s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000258s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000334s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000310s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 74 ) LIMIT 1   [ RunTime:0.000191s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000220s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 74 ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000293s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000278s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000059s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 64 ) LIMIT 1   [ RunTime:0.000040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000284s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008409s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run EditorForAdmin [ RunTime:0.002898s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.002922s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-07-14T04:13:14+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000405s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000056s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000231s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000035s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000035s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000324s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 74 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: UPDATE `ot_document` SET `title`='map vs unsorted_map',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499968500,`deadline`=0,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499976794,`status`=1,`position`=0 WHERE ( `id` = 74 ) [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 178 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p><span style=\"color: rgb(255, 0, 0);\">map 是红黑树,　unsorted_map 是hash表．</span></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 74 ) [ RunTime:0.000121s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.000127s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 189 行.
+
+[ 2017-07-14T04:13:15+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/index/cate_id/64.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000353s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000042s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000035s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000312s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000050s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000234s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000291s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000320s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000307s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-07-14T04:13:27+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000344s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000046s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000284s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000044s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000314s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: UPDATE `ot_document` SET `title`='remove erase',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499976807,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499976807,`status`=3,`position`=0 WHERE ( `id` = 75 ) [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000149s ]
+
+[ 2017-07-14T04:14:04+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/add/cate_id/64/model_id/2/pid/0.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000370s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000083s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/add%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000247s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000224s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000317s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000044s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000296s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000290s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000062s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 64 ) LIMIT 1   [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000440s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008577s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run EditorForAdmin [ RunTime:0.003283s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003314s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-07-14T04:14:20+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/index/cate_id/64.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000353s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000309s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000241s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000317s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000295s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000308s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-07-14T04:14:28+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000353s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000267s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000082s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000051s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000328s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: UPDATE `ot_document` SET `title`='remove erase',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499976868,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499976868,`status`=3,`position`=0 WHERE ( `id` = 75 ) [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000160s ]
+
+[ 2017-07-14T04:14:32+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/index/cate_id/64.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000352s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000046s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000260s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000053s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000217s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000327s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000043s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000344s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-14T04:14:35+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000352s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000045s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000255s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000053s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000224s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000325s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000044s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000320s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000332s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2017-07-14T04:14:41+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/index/cate_id/54.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000348s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000260s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000267s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000318s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( `id` = 54 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000300s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000302s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 54 ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 54 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-07-14T04:14:44+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/index/cate_id/64.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000338s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000046s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000254s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000226s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000322s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000044s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000299s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000302s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-07-14T04:14:58+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/add/cate_id/64/model_id/2/pid/0.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000349s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000043s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/add%' ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000310s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000243s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000326s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000044s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000295s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000342s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000056s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000052s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 64 ) LIMIT 1   [ RunTime:0.000039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000367s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008496s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run EditorForAdmin [ RunTime:0.003052s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003076s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2017-07-14T04:15:28+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000324s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000044s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000270s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000035s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000034s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000048s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000312s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: UPDATE `ot_document` SET `title`='remove erase',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499976928,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499976928,`status`=3,`position`=0 WHERE ( `id` = 75 ) [ RunTime:0.000168s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000262s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000159s ]
+
+[ 2017-07-14T04:16:28+08:00 ] 130.65.109.113 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000340s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000301s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000313s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: UPDATE `ot_document` SET `title`='remove erase',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499976988,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499976988,`status`=3,`position`=0 WHERE ( `id` = 75 ) [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000160s ]
+
+[ 2017-07-14T04:16:55+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000347s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000259s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000316s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: UPDATE `ot_document` SET `title`='remove erase',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1499977015,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=64,`root`=0,`update_time`=1499977015,`status`=1,`position`=0 WHERE ( `id` = 75 ) [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000251s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 178 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">C++ STL中的remove和erase函数曾经让我迷惑，同样都是删除，两者有什么区别呢？</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中的remove的作用是将等于value的元素放到vector的尾部，但并不减少vector的size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">vector中erase的作用是删除掉某个位置position或一段区域（begin, end)中的元素，减少其size</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">list容器中的remove 成员函数，原型是void remove (const value_type&amp; val);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">他的作用是删除list中值与val相同的节点，释放该节点的资源。<br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而list容器中的erase成员函数，原型是iterator erase (iterator position);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">作用是删除position位置的节点。这也是与remove不同的地方。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">考虑到list::erase是与位置有关，故erase还存在API: &nbsp;&nbsp;iterator erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">对于list 来说，什么时候用 remove 什么时候用 erase ?</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(255, 0, 0);\">erase 删除指定地址上的单个元素，remove 可以删除多个相同元素</span></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">对于set来说，只有erase API，没有remove API。 erase 的作用是把符合要求的元素都删掉。</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">(1) void erase (iterator position);<br/>(2) size_type erase (const value_type&amp; val);<br/>(3) void erase (iterator first, iterator last);</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\"><br/></p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">综上所述，erase一般是要释放资源，真正删除元素的，</p><p style=\"color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">而remove主要用在vector中，用于将不符合要求的元素移到容器尾部，而并不删除不符合要求的元素</p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 75 ) [ RunTime:0.000180s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.000082s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 189 行.
+
+[ 2017-07-14T04:16:57+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/index/cate_id/64.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000377s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000254s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000223s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000316s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000379s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 64 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2017-07-14T05:33:52+08:00 ] 130.65.109.113 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000323s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000348s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000191s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000061s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-07-14T05:34:06+08:00 ] 130.65.109.113 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000318s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000338s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000054s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-07-14T05:34:16+08:00 ] 130.65.109.113 /index.php?s=/home/article/lists/category/leetCode.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000320s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000338s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'leetCode' ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 AND category_id=61 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 AND category_id=61 ) ORDER BY create_time LIMIT 0,15   [ RunTime:0.000240s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000052s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2017-07-14T05:34:28+08:00 ] 130.65.109.113 /index.php?s=/home/article/detail/id/71.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000339s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000058s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 71 ) LIMIT 1   [ RunTime:0.000192s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000271s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 71 ) LIMIT 1   [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000305s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: UPDATE `ot_document` SET `view`=view+1 WHERE ( `id` = 71 ) [ RunTime:0.000164s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` < '71' ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000218s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` > '71' ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) AND ( `status` = 1 ) ORDER BY id LIMIT 1   [ RunTime:0.000177s ]
+INFO: [ documentDetailAfter ] --START--
+SQL: SHOW COLUMNS FROM `ot_attachment` [ RunTime:0.000280s ]
+SQL: SELECT `id`,`uid`,`title`,`type`,`source`,`record_id`,`download`,`size`,`dir`,`sort`,`create_time`,`update_time`,`status` FROM `ot_attachment` WHERE ( `record_id` = 71 ) AND ( `status` = 1 )  [ RunTime:0.000120s ]
+INFO: Run Attachment [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000261s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SocialComment' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.003738s ]
+NOTIC: [8] Undefined variable: addons /usr/share/nginx/html/Runtime/Cache/Home/58bd718024fb066be57959b1979e41a4.php 第 3 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run SocialComment [ RunTime:0.001804s ]
+INFO: [ documentDetailAfter ] --END-- [ RunTime:0.002629s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2017-07-14T05:34:45+08:00 ] 130.65.109.113 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
+
+[ 2017-07-14T05:34:56+08:00 ] 130.65.109.113 /index.php?s=/Admin/Index/index.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000341s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000045s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Index/index%' ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000255s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 1 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 1 ) AND ( `hide` = 0 )  [ RunTime:0.000033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000307s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SiteStat' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `ot_member` [ RunTime:0.000322s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_member` LIMIT 1   [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `ot_action_log` [ RunTime:0.000251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_action_log` LIMIT 1   [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000301s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` LIMIT 1   [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000304s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_category` LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000293s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_model` LIMIT 1   [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.004908s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000043s ]
+INFO: Run SiteStat [ RunTime:0.004395s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SystemInfo' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006270s ]
+SQL: select version() as v; [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001248s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001538s ]
+INFO: Run SystemInfo [ RunTime:0.001550s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'DevTeam' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007619s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000766s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002612s ]
+INFO: Run DevTeam [ RunTime:0.001066s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.007054s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000865s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-07-14T05:34:57+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/mydocument.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000363s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000043s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/mydocument%' ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000278s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000037s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000229s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000315s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000285s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `uid` = 1 ) AND ( `pid` = 0 ) LIMIT 1   [ RunTime:0.000210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `uid` = 1 ) AND ( `pid` = 0 ) ORDER BY update_time desc LIMIT 0,50   [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000413s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=75 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=74 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=73 ) LIMIT 1   [ RunTime:0.000108s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=72 ) LIMIT 1   [ RunTime:0.000106s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=71 ) LIMIT 1   [ RunTime:0.000106s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=68 ) LIMIT 1   [ RunTime:0.000105s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=69 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=70 ) LIMIT 1   [ RunTime:0.000102s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=51 ) LIMIT 1   [ RunTime:0.000107s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=15 ) LIMIT 1   [ RunTime:0.000121s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=45 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=67 ) LIMIT 1   [ RunTime:0.000108s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=66 ) LIMIT 1   [ RunTime:0.000108s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=64 ) LIMIT 1   [ RunTime:0.000106s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=65 ) LIMIT 1   [ RunTime:0.000108s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=63 ) LIMIT 1   [ RunTime:0.000123s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=48 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=60 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=56 ) LIMIT 1   [ RunTime:0.000099s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=59 ) LIMIT 1   [ RunTime:0.000096s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=58 ) LIMIT 1   [ RunTime:0.000110s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=57 ) LIMIT 1   [ RunTime:0.000105s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=55 ) LIMIT 1   [ RunTime:0.000104s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=54 ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=49 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=44 ) LIMIT 1   [ RunTime:0.000105s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=45 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=47 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=52 ) LIMIT 1   [ RunTime:0.000107s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=39 ) LIMIT 1   [ RunTime:0.000101s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=60 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=50 ) LIMIT 1   [ RunTime:0.000104s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=46 ) LIMIT 1   [ RunTime:0.000105s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=29 ) LIMIT 1   [ RunTime:0.000107s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=57 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=38 ) LIMIT 1   [ RunTime:0.000100s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=41 ) LIMIT 1   [ RunTime:0.000097s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=40 ) LIMIT 1   [ RunTime:0.000104s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=37 ) LIMIT 1   [ RunTime:0.000105s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=30 ) LIMIT 1   [ RunTime:0.000107s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=58 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=25 ) LIMIT 1   [ RunTime:0.000109s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=56 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=36 ) LIMIT 1   [ RunTime:0.000105s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=35 ) LIMIT 1   [ RunTime:0.000104s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=24 ) LIMIT 1   [ RunTime:0.000107s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=34 ) LIMIT 1   [ RunTime:0.000105s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=56 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=33 ) LIMIT 1   [ RunTime:0.000113s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=32 ) LIMIT 1   [ RunTime:0.000104s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=56 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=31 ) LIMIT 1   [ RunTime:0.000106s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=56 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=26 ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=23 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=21 ) LIMIT 1   [ RunTime:0.000107s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=52 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=20 ) LIMIT 1   [ RunTime:0.000129s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=14 ) LIMIT 1   [ RunTime:0.000105s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=17 ) LIMIT 1   [ RunTime:0.000109s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=49 ) LIMIT 1   [ RunTime:0.000037s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.036782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-07-14T05:35:03+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000367s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000261s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000229s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000330s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000312s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000307s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-14T05:35:09+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/edit/id/71/model/1/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000367s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000262s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000236s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000322s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000373s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 71 ) LIMIT 1   [ RunTime:0.000175s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000258s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 71 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000303s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000305s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000060s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000414s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008832s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run EditorForAdmin [ RunTime:0.003182s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003211s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-14T05:37:08+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000363s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000045s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000274s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000312s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 71 ) LIMIT 1   [ RunTime:0.000133s ]
+SQL: UPDATE `ot_document` SET `title`='391. Perfect Rectangle',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=1,`comment`=0,`create_time`=1499923200,`deadline`=0,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=61,`root`=0,`update_time`=1499981828,`status`=1,`position`=0 WHERE ( `id` = 71 ) [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000247s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 178 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>完美三角形．给出若干个矩形的左下和右上角坐标．判断这些矩形能不能刚好组成一个大的矩形．不能有重叠，不能有空隙．</p><p><br/></p><p>这题的思路是：</p><p>１．最外面的四个点只出现一次，　其余点均出现两个．</p><p>２．最外面四个点构成的矩形面积刚好是所有小矩形的面积之和．</p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 71 ) [ RunTime:0.000123s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.000086s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 189 行.
+
+[ 2017-07-14T05:37:09+08:00 ] 130.65.109.113 /index.php?s=/Admin/Article/index/cate_id/61.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000358s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000046s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000270s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000050s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000237s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000331s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000318s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000306s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 61 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000245s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-07-14T06:43:51+08:00 ] 139.162.119.197 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000285s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000359s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000188s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000061s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000087s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-07-14T08:48:20+08:00 ] 183.129.160.229 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000326s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000304s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000052s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-07-14T08:49:49+08:00 ] 71.6.202.204 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000284s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000338s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000048s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-07-14T09:02:03+08:00 ] 157.55.39.113 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000312s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000327s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000052s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000114s ]
+
