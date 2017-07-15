@@ -28,7 +28,7 @@ class PublicController extends \Think\Controller {
 //	    echo $verify;
             if(!check_verify($verify)){
 	//	$this->error($verify);
-              $this->error('验证码输入错误lalala！');
+              $this->error('验证码输入错误！');
             }
 //	    dump($_POST);
             /* 调用UC登录接口登录 */
