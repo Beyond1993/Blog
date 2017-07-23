@@ -3573,3 +3573,63 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
 
+[ 2017-07-23T23:23:15+08:00 ] 157.55.39.131 /index.php?s=/Home/Index/index/p/2.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000343s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000339s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000082s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 10,10   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=64 ) LIMIT 1   [ RunTime:0.000040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-07-23T23:56:30+08:00 ] 71.6.165.200 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000306s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000337s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000093s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000074s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
