@@ -77,7 +77,7 @@
                                 <li><a href="/index.php?s=/home/article/lists/category/leetCode.html">leetCode</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/CorCPlusPlus.html">C/C++</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/Java.html">Java</a></li>
-                                <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Python</a></li>
+                                <li><a href="/index.php?s=/home/article/lists/category/Python.html">Python</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Matlab</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">PHP</a></li>
                                 <li><a href="/index.php?s=/home/article/lists/category/argularjs.html">Javascript</a></li>
