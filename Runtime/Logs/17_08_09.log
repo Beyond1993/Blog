@@ -130,3 +130,1177 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.000018s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
 
+[ 2017-08-09T00:16:15+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+
+[ 2017-08-09T00:16:16+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2017-08-09T00:17:16+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-08-09T00:17:16+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000038s ]
+
+[ 2017-08-09T00:18:16+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-08-09T00:18:16+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000037s ]
+
+[ 2017-08-09T00:19:16+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+
+[ 2017-08-09T00:19:17+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000041s ]
+
+[ 2017-08-09T00:20:17+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+
+[ 2017-08-09T00:20:18+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-08-09T00:21:18+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-08-09T00:21:18+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-08-09T00:22:18+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-08-09T00:22:19+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000039s ]
+
+[ 2017-08-09T00:23:20+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-08-09T00:23:20+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2017-08-09T00:24:20+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-08-09T00:24:21+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2017-08-09T00:25:22+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+
+[ 2017-08-09T00:25:22+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2017-08-09T00:26:22+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-08-09T00:26:22+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-08-09T00:27:22+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+
+[ 2017-08-09T00:27:23+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2017-08-09T00:28:23+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-08-09T00:28:23+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000038s ]
+
+[ 2017-08-09T00:29:23+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-08-09T00:29:23+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000039s ]
+
+[ 2017-08-09T00:30:23+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-08-09T00:30:23+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2017-08-09T00:31:24+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-08-09T00:31:24+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000039s ]
+
+[ 2017-08-09T00:32:24+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-08-09T00:32:24+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2017-08-09T00:33:25+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+
+[ 2017-08-09T00:33:25+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-08-09T00:34:25+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-08-09T00:34:25+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000041s ]
+
+[ 2017-08-09T00:35:26+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-08-09T00:35:26+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2017-08-09T00:36:27+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-08-09T00:36:27+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2017-08-09T00:37:27+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+
+[ 2017-08-09T00:37:27+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-08-09T00:38:28+08:00 ] 192.94.66.22 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-08-09T00:38:28+08:00 ] 192.94.66.22 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-08-09T01:22:54+08:00 ] 123.125.71.41 /index.php?s=/home/article/lists/category/memcached.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000323s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000345s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'memcached' ) LIMIT 1   [ RunTime:0.000053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-08-09T01:37:54+08:00 ] 192.94.66.17 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000045s ]
+
+[ 2017-08-09T01:40:09+08:00 ] 192.94.66.17 /index.php?s=/Admin/Index/index.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000351s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000043s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Index/index%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000269s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 1 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 1 ) AND ( `hide` = 0 )  [ RunTime:0.000034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000290s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SiteStat' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_member` [ RunTime:0.000284s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_member` LIMIT 1   [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `ot_action_log` [ RunTime:0.000316s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_action_log` LIMIT 1   [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000310s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` LIMIT 1   [ RunTime:0.000123s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_category` LIMIT 1   [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000321s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_model` LIMIT 1   [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005076s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run SiteStat [ RunTime:0.004531s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SystemInfo' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006514s ]
+SQL: select version() as v; [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001262s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001561s ]
+INFO: Run SystemInfo [ RunTime:0.001570s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'DevTeam' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007848s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000786s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002678s ]
+INFO: Run DevTeam [ RunTime:0.001112s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.007253s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000889s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-08-09T01:40:18+08:00 ] 192.94.66.17 /index.php?s=/Admin/Article/mydocument.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000365s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/mydocument%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000276s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000218s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000346s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000362s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `uid` = 1 ) AND ( `pid` = 0 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `uid` = 1 ) AND ( `pid` = 0 ) ORDER BY update_time desc LIMIT 0,50   [ RunTime:0.000466s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000399s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=133 ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=23 ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=131 ) LIMIT 1   [ RunTime:0.000121s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=130 ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=129 ) LIMIT 1   [ RunTime:0.000113s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=128 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=126 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=73 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=127 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=111 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=25 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=56 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=125 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=124 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=113 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=114 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=123 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=122 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=121 ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=120 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=71 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=29 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=57 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=119 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=118 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=117 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=108 ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=116 ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=26 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=115 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=71 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=64 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=112 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=110 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=69 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=109 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=107 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=86 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=106 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=59 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=105 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=104 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=102 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=101 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=94 ) LIMIT 1   [ RunTime:0.000112s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=100 ) LIMIT 1   [ RunTime:0.000133s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=99 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=97 ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=98 ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=72 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=81 ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=95 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=93 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=91 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=88 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=89 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.037907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-08-09T01:40:33+08:00 ] 192.94.66.17 /index.php?s=/Admin/Article/index/cate_id/66.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000358s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000260s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000083s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000233s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000323s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000306s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000307s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 66 ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 66 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-08-09T01:40:36+08:00 ] 192.94.66.17 /index.php?s=/Admin/article/add/cate_id/66/model_id/2/pid/0.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000378s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000046s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/add%' ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000324s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000232s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000326s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000302s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000269s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000057s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 66 ) LIMIT 1   [ RunTime:0.000038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000306s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008756s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run EditorForAdmin [ RunTime:0.002984s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003008s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-08-09T01:41:15+08:00 ] 192.94.66.17 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000376s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000046s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000269s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000051s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000317s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 324 行.
+SQL: INSERT INTO `ot_document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('Panda Data','','',2,1,0,0,0,0,1502214075,0,0,0,2,66,1,0,0,0,1502214075,1,0) [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000253s ]
+SQL: INSERT INTO `ot_document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('<p><a href=\"http://pandas.pydata.org/pandas-docs/stable/\" target=\"_self\" title=\"\">http://pandas.pydata.org/pandas-docs/stable/</a></p><p><br/></p><p><br/></p>',0,0,'',134) [ RunTime:0.000151s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.000080s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `ot_action` [ RunTime:0.000263s ]
+SQL: SELECT * FROM `ot_action` WHERE ( `name` = 'add_document' ) LIMIT 1   [ RunTime:0.000045s ]
+
+[ 2017-08-09T01:41:16+08:00 ] 192.94.66.17 /index.php?s=/Admin/Article/index/cate_id/66.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000394s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000260s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000232s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000330s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000305s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000354s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 66 ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 66 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000214s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-08-09T02:25:33+08:00 ] 220.181.51.105 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000327s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000337s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000135s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000268s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000058s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=73 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2017-08-09T02:25:36+08:00 ] 115.200.235.10 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000324s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000341s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=73 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-08-09T02:25:36+08:00 ] 119.118.23.203 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000351s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000348s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=73 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000042s ]
+
+[ 2017-08-09T02:25:36+08:00 ] 175.42.0.194 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000332s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000360s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000052s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000060s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=73 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-08-09T02:25:36+08:00 ] 106.45.0.225 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000327s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000344s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000052s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000057s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000061s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=73 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-08-09T02:25:36+08:00 ] 182.101.49.4 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000325s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000347s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000052s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=73 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+
+[ 2017-08-09T02:51:44+08:00 ] 80.82.215.160 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000319s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000323s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000062s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=73 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-08-09T03:09:49+08:00 ] 157.55.39.124 /index.php?s=/Home/Index/index/p/2.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000317s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000352s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 10,10   [ RunTime:0.000300s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000072s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=71 ) LIMIT 1   [ RunTime:0.000132s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000066s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=71 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-08-09T03:46:13+08:00 ] 40.77.167.137 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000325s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000329s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000058s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=73 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-08-09T04:48:01+08:00 ] 217.182.141.188 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000343s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000344s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000052s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=73 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
