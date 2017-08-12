@@ -3762,3 +3762,1084 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.000031s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
 
+[ 2017-08-12T14:01:35+08:00 ] 192.94.66.19 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2017-08-12T14:01:43+08:00 ] 192.94.66.19 /index.php?s=/Admin/Index/index.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000355s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Index/index%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000265s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 1 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 1 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000293s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SiteStat' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `ot_member` [ RunTime:0.000281s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_member` LIMIT 1   [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `ot_action_log` [ RunTime:0.000255s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_action_log` LIMIT 1   [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000355s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` LIMIT 1   [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_category` LIMIT 1   [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000296s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_model` LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.004937s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run SiteStat [ RunTime:0.004404s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SystemInfo' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006248s ]
+SQL: select version() as v; [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001198s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001487s ]
+INFO: Run SystemInfo [ RunTime:0.001501s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'DevTeam' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007661s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000776s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002632s ]
+INFO: Run DevTeam [ RunTime:0.001134s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.007082s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.000871s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-08-12T14:01:45+08:00 ] 192.94.66.19 /index.php?s=/Admin/Article/mydocument.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000346s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000058s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/mydocument%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000271s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000239s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000331s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000329s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `uid` = 1 ) AND ( `pid` = 0 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `uid` = 1 ) AND ( `pid` = 0 ) ORDER BY update_time desc LIMIT 0,50   [ RunTime:0.000440s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000351s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=139 ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=56 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=136 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=137 ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=135 ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=134 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=133 ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=23 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=131 ) LIMIT 1   [ RunTime:0.000130s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=130 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=129 ) LIMIT 1   [ RunTime:0.000130s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=128 ) LIMIT 1   [ RunTime:0.000112s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=126 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=73 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=127 ) LIMIT 1   [ RunTime:0.000112s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=111 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=25 ) LIMIT 1   [ RunTime:0.000112s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=56 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=125 ) LIMIT 1   [ RunTime:0.000112s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=124 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=113 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=114 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=123 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=122 ) LIMIT 1   [ RunTime:0.000129s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=121 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=120 ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=71 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=29 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=57 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=119 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=118 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=117 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=108 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=116 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=26 ) LIMIT 1   [ RunTime:0.000129s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=51 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=115 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=71 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=64 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=63 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=112 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=110 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=69 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=109 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=107 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=86 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=106 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=59 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=105 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=104 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=102 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=101 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=94 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=100 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=99 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=97 ) LIMIT 1   [ RunTime:0.000136s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=67 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=98 ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=72 ) LIMIT 1   [ RunTime:0.000112s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( pid=81 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT `title` FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.037753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-08-12T14:01:48+08:00 ] 192.94.66.19 /index.php?s=/Admin/Article/index/cate_id/46.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000406s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000261s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000232s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000332s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( `id` = 46 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000359s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000308s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 46 ) LIMIT 1   [ RunTime:0.000175s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 46 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000183s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-08-12T14:01:51+08:00 ] 192.94.66.19 /index.php?s=/Admin/Article/index/cate_id/65.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000353s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000271s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000239s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000333s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000047s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000320s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 65 ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 65 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-08-12T14:01:56+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/add/cate_id/65/model_id/2/pid/0.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000384s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/add%' ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000268s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000035s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000249s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000340s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000320s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.000347s ]
+SQL: SELECT * FROM `ot_attribute` WHERE ( `model_id` IN ('2','1') )  [ RunTime:0.000056s ]
+SQL: SELECT `field_sort` FROM `ot_model` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SELECT `type` FROM `ot_category` WHERE ( `id` = 65 ) LIMIT 1   [ RunTime:0.000125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000315s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'EditorForAdmin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008580s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run EditorForAdmin [ RunTime:0.003047s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.003083s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-08-12T14:02:58+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000364s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000317s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000326s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 324 行.
+SQL: INSERT INTO `ot_document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('Over window','','',2,1,0,0,0,0,1502517778,0,0,0,2,65,1,0,0,0,1502517778,3,0) [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000257s ]
+SQL: INSERT INTO `ot_document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('',0,0,'',140) [ RunTime:0.000142s ]
+
+[ 2017-08-12T14:03:58+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000355s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000269s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000329s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000139s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502517838,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502517838,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000262s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000104s ]
+
+[ 2017-08-12T14:05:06+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000373s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000273s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000048s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000327s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502517906,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502517906,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000250s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000108s ]
+
+[ 2017-08-12T14:05:58+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000364s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000273s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000320s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502517958,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502517958,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000145s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000091s ]
+
+[ 2017-08-12T14:07:01+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000362s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000263s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000047s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000377s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518021,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518021,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000135s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000263s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000095s ]
+
+[ 2017-08-12T14:08:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000359s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000265s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000324s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518080,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518080,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000103s ]
+
+[ 2017-08-12T14:09:09+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000413s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000051s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000264s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000332s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518149,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518149,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000273s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000158s ]
+
+[ 2017-08-12T14:10:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000359s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000264s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000326s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000139s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518200,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518200,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000116s ]
+
+[ 2017-08-12T14:11:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000355s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000286s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000323s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000133s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518260,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518260,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000262s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000112s ]
+
+[ 2017-08-12T14:12:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000395s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000057s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000268s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000067s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000065s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000372s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518320,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518320,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000261s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000100s ]
+
+[ 2017-08-12T14:13:13+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000357s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000046s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000270s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000326s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518392,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518392,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000251s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000104s ]
+
+[ 2017-08-12T14:14:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000359s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000262s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000323s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518440,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518440,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000104s ]
+
+[ 2017-08-12T14:15:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000349s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000259s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000325s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518500,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518500,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000100s ]
+
+[ 2017-08-12T14:16:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000352s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000058s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000259s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000060s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000332s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000136s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518560,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518560,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000296s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000105s ]
+
+[ 2017-08-12T14:17:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000375s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000319s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000328s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518620,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518620,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000137s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000263s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000118s ]
+
+[ 2017-08-12T14:18:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000369s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000057s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000265s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000336s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518680,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518680,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000232s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000115s ]
+
+[ 2017-08-12T14:19:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000354s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000269s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000338s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000135s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518740,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518740,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000100s ]
+
+[ 2017-08-12T14:20:01+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000428s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000046s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000266s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000329s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518801,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518801,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000256s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000101s ]
+
+[ 2017-08-12T14:21:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000360s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000058s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000266s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000327s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518860,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518860,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000264s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000098s ]
+
+[ 2017-08-12T14:22:01+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000368s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000046s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000264s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000081s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000329s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518921,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518921,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000135s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000248s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000100s ]
+
+[ 2017-08-12T14:23:19+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000358s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000270s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000325s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000129s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502518999,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502518999,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000104s ]
+
+[ 2017-08-12T14:24:01+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000369s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000282s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000058s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000344s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502519041,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502519041,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000275s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000109s ]
+
+[ 2017-08-12T14:25:01+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000353s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000049s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000268s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000370s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502519101,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502519101,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000110s ]
+
+[ 2017-08-12T14:26:03+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000381s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000311s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000327s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502519163,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502519163,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000264s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000104s ]
+
+[ 2017-08-12T14:27:00+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000381s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000046s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000314s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000035s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000316s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502519220,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502519220,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000281s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p><br/></p><p>why?</p><p>Aggerations by Patition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000105s ]
+
+[ 2017-08-12T14:28:01+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000398s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000046s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000258s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000307s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502519281,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502519281,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000251s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p>Table in --&gt; Table out</p><p><br/></p><p>is the content after &#39;over&#39; input?</p><p><br/></p><p>Input is partitioned (optionally ordered)</p><p>An instance of a PTF operates on a Partition</p><p>Partitioning drives parallel execution</p><p><br/></p><p>Similar to MR, predate to MapReduce</p><p><br/></p><p>why?</p><p>Aggerations by Partition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000120s ]
+
+[ 2017-08-12T14:29:01+08:00 ] 192.94.66.19 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000358s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000048s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/autosave%' ) LIMIT 1   [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000263s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000043s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000325s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502519341,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502519341,`status`=3,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 547 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>PTF<br/></p><p>in Place Table Function?</p><p>Table in --&gt; Table out</p><p><br/></p><p>is the content after &#39;over&#39; input?</p><p><br/></p><p>Input is partitioned (optionally ordered)</p><p>An instance of a PTF operates on a Partition</p><p>Partitioning drives parallel execution</p><p><br/></p><p>Similar to MR, predate to MapReduce</p><p><br/></p><p>why?</p><p>Aggerations by Partition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000110s ]
+
+[ 2017-08-12T14:29:32+08:00 ] 192.94.66.19 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000354s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/update%' ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000263s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000040s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000322s ]
+SQL: SELECT `status` FROM `ot_document` WHERE ( `id` = 140 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: UPDATE `ot_document` SET `title`='Over window',`name`='',`description`='',`type`=2,`display`=1,`level`=0,`cover_id`=0,`view`=0,`comment`=0,`create_time`=1502519372,`link_id`=0,`pid`=0,`model_id`=2,`category_id`=65,`root`=0,`update_time`=1502519372,`status`=1,`position`=0 WHERE ( `id` = 140 ) [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 178 行.
+SQL: UPDATE `ot_document_article` SET `content`='<p>https://www.youtube.com/watch?v=CV-M8CBEyM0&amp;t=1132s</p><p><br/></p><p>PTF<br/></p><p>in Place Table Function?</p><p>Table in --&gt; Table out</p><p><br/></p><p>is the content after &#39;over&#39; input?</p><p><br/></p><p>Input is partitioned (optionally ordered)</p><p>An instance of a PTF operates on a Partition</p><p>Partitioning drives parallel execution</p><p><br/></p><p>Similar to MR, predate to MapReduce</p><p><br/></p><p>why?</p><p>Aggerations by Partition&nbsp;-&gt; Rank, top N</p><p>Inter row Calculation -&gt; Time series analysis</p><p>Multi Pass Algorithm</p><p>Graph Algorithm --&gt; implement recursive.</p><p><br/></p><p>Example : Market &nbsp;Basket Analysis ?&nbsp;</p><p><br/></p><p><br/></p>',`parse`=0,`bookmark`=0,`template`='' WHERE ( `id` = 140 ) [ RunTime:0.000122s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Attachment [ RunTime:0.000085s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: id /usr/share/nginx/html/Application/Admin/Model/DocumentModel.class.php 第 189 行.
+
+[ 2017-08-12T14:29:33+08:00 ] 192.94.66.19 /index.php?s=/Admin/Article/index/cate_id/65.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000383s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000035s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000268s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000039s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000036s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000233s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000326s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000045s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000312s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000359s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 65 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 65 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2017-08-12T14:56:58+08:00 ] 192.94.66.19 /index.php?s=/Admin/Article/index/cate_id/56.html
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /usr/share/nginx/html/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000358s ]
+SQL: SELECT * FROM `ot_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000047s ]
+SQL: SELECT `id` FROM `ot_menu` WHERE ( url like '%Article/index%' ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.000257s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT `id`,`pid`,`title` FROM `ot_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE ( pid = 2 )  [ RunTime:0.000037s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000041s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `ot_auth_group_access` [ RunTime:0.000235s ]
+SQL: SELECT `extend_id` FROM ot_auth_group_access g INNER JOIN ot_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000326s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000047s ]
+SQL: SELECT `id`,`title`,`pid` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.000322s ]
+SQL: SELECT * FROM `ot_model` WHERE ( `name` = 'document' ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000315s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 56 ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `status` IN ('0','1','2') ) AND ( `pid` = 0 ) AND ( `category_id` = 56 ) ORDER BY level DESC,id DESC LIMIT 0,50   [ RunTime:0.000212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-08-12T17:21:56+08:00 ] 54.198.232.186 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000326s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000380s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000234s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=56 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: 
+INFO: 
+INFO: 
+
+[ 2017-08-12T18:09:19+08:00 ] 40.77.167.137 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000338s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000340s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000048s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000060s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=56 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=66 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=54 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=75 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=74 ) LIMIT 1   [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
