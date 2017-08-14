@@ -1209,3 +1209,180 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.000031s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
 
+[ 2017-08-15T01:49:33+08:00 ] 186.204.52.88 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000317s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000339s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000135s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000274s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000050s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000046s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000075s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=53 ) LIMIT 1   [ RunTime:0.000083s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-08-15T02:48:03+08:00 ] 207.46.13.191 /index.php?s=/home/article/detail/id/81.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000322s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000057s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 81 ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000258s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 81 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000387s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `id` = 59 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: UPDATE `ot_document` SET `view`=view+1 WHERE ( `id` = 81 ) [ RunTime:0.000143s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` < '81' ) AND ( `pid` = 0 ) AND ( `category_id` = 59 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000329s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` > '81' ) AND ( `pid` = 0 ) AND ( `category_id` = 59 ) AND ( `status` = 1 ) ORDER BY id LIMIT 1   [ RunTime:0.000194s ]
+INFO: [ documentDetailAfter ] --START--
+SQL: SHOW COLUMNS FROM `ot_attachment` [ RunTime:0.000329s ]
+SQL: SELECT `id`,`uid`,`title`,`type`,`source`,`record_id`,`download`,`size`,`dir`,`sort`,`create_time`,`update_time`,`status` FROM `ot_attachment` WHERE ( `record_id` = 81 ) AND ( `status` = 1 )  [ RunTime:0.000048s ]
+INFO: Run Attachment [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000277s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SocialComment' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.003971s ]
+NOTIC: [8] Undefined variable: addons /usr/share/nginx/html/Runtime/Cache/Home/58bd718024fb066be57959b1979e41a4.php 第 3 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run SocialComment [ RunTime:0.001799s ]
+INFO: [ documentDetailAfter ] --END-- [ RunTime:0.002610s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-08-15T03:13:16+08:00 ] 45.79.223.204 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000329s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000344s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000268s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000049s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=53 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-08-15T05:06:25+08:00 ] 40.77.167.137 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000322s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000305s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000042s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000039s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=53 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000040s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-08-15T05:24:46+08:00 ] 123.125.71.105 /index.php?s=/home/article/lists/category/mongodb.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000326s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000340s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `name` = 'mongodb' ) LIMIT 1   [ RunTime:0.000157s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-08-15T05:26:25+08:00 ] 60.191.38.77 /
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000319s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000341s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000051s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000048s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000044s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000047s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=53 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=72 ) LIMIT 1   [ RunTime:0.000041s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.000043s ]
+SQL: SELECT * FROM `ot_category` WHERE ( id=65 ) LIMIT 1   [ RunTime:0.000044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
