@@ -387,3 +387,129 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.000040s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
 
+[ 2017-09-04T16:35:15+08:00 ] 123.126.113.189 /index.php?s=/home/article/detail/id/108.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000310s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000057s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 108 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000256s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 108 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000342s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `id` = 65 ) LIMIT 1   [ RunTime:0.000053s ]
+SQL: UPDATE `ot_document` SET `view`=view+1 WHERE ( `id` = 108 ) [ RunTime:0.000157s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` < '108' ) AND ( `pid` = 0 ) AND ( `category_id` = 65 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000219s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` > '108' ) AND ( `pid` = 0 ) AND ( `category_id` = 65 ) AND ( `status` = 1 ) ORDER BY id LIMIT 1   [ RunTime:0.000186s ]
+INFO: [ documentDetailAfter ] --START--
+SQL: SHOW COLUMNS FROM `ot_attachment` [ RunTime:0.000297s ]
+SQL: SELECT `id`,`uid`,`title`,`type`,`source`,`record_id`,`download`,`size`,`dir`,`sort`,`create_time`,`update_time`,`status` FROM `ot_attachment` WHERE ( `record_id` = 108 ) AND ( `status` = 1 )  [ RunTime:0.000049s ]
+INFO: Run Attachment [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000270s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SocialComment' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.003832s ]
+NOTIC: [8] Undefined variable: addons /usr/share/nginx/html/Runtime/Cache/Home/58bd718024fb066be57959b1979e41a4.php 第 3 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run SocialComment [ RunTime:0.001867s ]
+INFO: [ documentDetailAfter ] --END-- [ RunTime:0.002620s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-09-04T16:35:26+08:00 ] 123.126.113.189 /index.php?s=/home/article/detail/id/107.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000323s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000352s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 107 ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000260s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 107 ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000392s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `id` = 65 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: UPDATE `ot_document` SET `view`=view+1 WHERE ( `id` = 107 ) [ RunTime:0.000134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` < '107' ) AND ( `pid` = 0 ) AND ( `category_id` = 65 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000244s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` > '107' ) AND ( `pid` = 0 ) AND ( `category_id` = 65 ) AND ( `status` = 1 ) ORDER BY id LIMIT 1   [ RunTime:0.000181s ]
+INFO: [ documentDetailAfter ] --START--
+SQL: SHOW COLUMNS FROM `ot_attachment` [ RunTime:0.000307s ]
+SQL: SELECT `id`,`uid`,`title`,`type`,`source`,`record_id`,`download`,`size`,`dir`,`sort`,`create_time`,`update_time`,`status` FROM `ot_attachment` WHERE ( `record_id` = 107 ) AND ( `status` = 1 )  [ RunTime:0.000051s ]
+INFO: Run Attachment [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000268s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SocialComment' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.003812s ]
+NOTIC: [8] Undefined variable: addons /usr/share/nginx/html/Runtime/Cache/Home/58bd718024fb066be57959b1979e41a4.php 第 3 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run SocialComment [ RunTime:0.001803s ]
+INFO: [ documentDetailAfter ] --END-- [ RunTime:0.002581s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-09-04T21:18:08+08:00 ] 207.46.13.26 /index.php?s=/home/article/detail/id/46.html
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.000306s ]
+SQL: SELECT * FROM `ot_document` WHERE ( status=1 ) ORDER BY view desc LIMIT 0,12   [ RunTime:0.000355s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` = 46 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `ot_document_article` [ RunTime:0.000253s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark` FROM `ot_document_article` WHERE ( `id` = 46 ) LIMIT 1   [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.000339s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `ot_category` WHERE ( `id` = 50 ) LIMIT 1   [ RunTime:0.000059s ]
+SQL: UPDATE `ot_document` SET `view`=view+1 WHERE ( `id` = 46 ) [ RunTime:0.000127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` < '46' ) AND ( `pid` = 0 ) AND ( `category_id` = 50 ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000254s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `ot_document` WHERE ( `id` > '46' ) AND ( `pid` = 0 ) AND ( `category_id` = 50 ) AND ( `status` = 1 ) ORDER BY id LIMIT 1   [ RunTime:0.000192s ]
+INFO: [ documentDetailAfter ] --START--
+SQL: SHOW COLUMNS FROM `ot_attachment` [ RunTime:0.000349s ]
+SQL: SELECT `id`,`uid`,`title`,`type`,`source`,`record_id`,`download`,`size`,`dir`,`sort`,`create_time`,`update_time`,`status` FROM `ot_attachment` WHERE ( `record_id` = 46 ) AND ( `status` = 1 )  [ RunTime:0.000053s ]
+INFO: Run Attachment [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.000269s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE ( `name` = 'SocialComment' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.003890s ]
+NOTIC: [8] Undefined variable: addons /usr/share/nginx/html/Runtime/Cache/Home/58bd718024fb066be57959b1979e41a4.php 第 3 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run SocialComment [ RunTime:0.001863s ]
+INFO: [ documentDetailAfter ] --END-- [ RunTime:0.002694s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
